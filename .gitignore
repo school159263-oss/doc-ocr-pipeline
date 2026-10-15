@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.dashboard_cache/
+.claude/
+doc_pipeline/docs/
+doc_pipeline/docs_holdout/
+*_log.txt
+*.exe
+resume_and_slides/

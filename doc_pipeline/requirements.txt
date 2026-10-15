@@ -1,0 +1,8 @@
+pdfplumber
+pypdfium2
+pillow
+numpy
+paddleocr
+paddlepaddle
+pytesseract
+requests
