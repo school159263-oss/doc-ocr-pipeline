@@ -1,0 +1,3161 @@
+{
+  "engine": "local",
+  "folder": "samples",
+  "samples": 20,
+  "stages": [
+    {
+      "name": "① 原始 OCR",
+      "mode": "baseline",
+      "field_accuracy": 0.7026315789473684,
+      "doc_accuracy": 0.0,
+      "auto_release": 0,
+      "auto_release_correct": 0,
+      "api_calls": 0,
+      "seconds": 4.9,
+      "docs": [
+        {
+          "file": "order_001.png",
+          "difficulty": "clean",
+          "ok": 14,
+          "total": 17,
+          "errors": [
+            "po_number: P026024582 ≠ PO26024582",
+            "lines[0].unit_price: 535.0 ≠ 5.35",
+            "lines[2].unit_price: 333.0 ≠ 3.33"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "旭光積體電路股份有限公司",
+            "po_number": "P026024582",
+            "order_date": "2026-02-02",
+            "delivery_date": "2026-02-10",
+            "lines": [
+              {
+                "item_code": "QFN-0808-C18",
+                "description": "四方平面引腳封裝8x8mm",
+                "quantity": 1000.0,
+                "unit_price": 535.0,
+                "amount": 5350.0
+              },
+              {
+                "item_code": "BMP-CU-P15",
+                "description": "銅柱凸塊製程",
+                "quantity": 1000.0,
+                "unit_price": 38.55,
+                "amount": 38550.0
+              },
+              {
+                "item_code": "QFN-0505-C10",
+                "description": "四方平面引腳封裝5x5mm",
+                "quantity": 500.0,
+                "unit_price": 333.0,
+                "amount": 1665.0
+              }
+            ],
+            "total_amount": 45565.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_002.png",
+          "difficulty": "stamp",
+          "ok": 19,
+          "total": 25,
+          "errors": [
+            "po_number: P026066514 ≠ PO26066514",
+            "total_amount: 17788.6 ≠ 170788.6",
+            "lines[0].unit_price: 546.0 ≠ 5.46",
+            "lines[2].item_code: S-P-1210-M02 ≠ SIP-1210-M02",
+            "lines[3].unit_price: 0.0 ≠ 255.58",
+            "lines[4].amount: 1950.0 ≠ 101950.0"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "鼎峰電子股份有限公司",
+            "po_number": "P026066514",
+            "order_date": "2026-06-08",
+            "delivery_date": "2026-06-16",
+            "lines": [
+              {
+                "item_code": "QFN-0808-C18",
+                "description": "四方平面引腳封裝8x8mm",
+                "quantity": 5000.0,
+                "unit_price": 546.0,
+                "amount": 27300.0
+              },
+              {
+                "item_code": "FT-LG-T08",
+                "description": "成品最終測試邏輯℃",
+                "quantity": 500.0,
+                "unit_price": 1.93,
+                "amount": 965.0
+              },
+              {
+                "item_code": "S-P-1210-M02",
+                "description": "系統級封裝模組12x10mm",
+                "quantity": 100.0,
+                "unit_price": 99.04,
+                "amount": 9904.0
+              },
+              {
+                "item_code": "FCBGA-4545-B08",
+                "description": "覆球柵陣列封裝45ㄨ45mm",
+                "quantity": 120.0,
+                "unit_price": 0.0,
+                "amount": 30669.6
+              },
+              {
+                "item_code": "BMP-CU-P15",
+                "description": "銅柱凸塊製程",
+                "quantity": 2500.0,
+                "unit_price": 40.78,
+                "amount": 1950.0
+              }
+            ],
+            "total_amount": 17788.6,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_003.png",
+          "difficulty": "noisy",
+          "ok": 19,
+          "total": 25,
+          "errors": [
+            "po_number: P026044733 ≠ PO26044733",
+            "total_amount: 1156.8 ≠ 1011156.8",
+            "lines[0].item_code: WB-AU08-s05 ≠ WB-AU08-S05",
+            "lines[1].item_code: FCBGA-3535-AOI ≠ FCBGA-3535-A01",
+            "lines[2].item_code: CP-WT12-TOI ≠ CP-WT12-T01",
+            "lines[4].unit_price: 0.0 ≠ 1.72"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "宏晶半導體股份有限公司",
+            "po_number": "P026044733",
+            "order_date": "2026-04-06",
+            "delivery_date": "2026-05-05",
+            "lines": [
+              {
+                "item_code": "WB-AU08-s05",
+                "description": "金打封裝0.8m",
+                "quantity": 12000.0,
+                "unit_price": 11.66,
+                "amount": 139920.0
+              },
+              {
+                "item_code": "FCBGA-3535-AOI",
+                "description": "覆晶球柵陣列封裝35x35mm",
+                "quantity": 120.0,
+                "unit_price": 191.59,
+                "amount": 22990.8
+              },
+              {
+                "item_code": "CP-WT12-TOI",
+                "description": "晶圓針測12吋",
+                "quantity": 300.0,
+                "unit_price": 1539.42,
+                "amount": 461826.0
+              },
+              {
+                "item_code": "BMP-CU-P15",
+                "description": "銅柱凸塊製程",
+                "quantity": 10000.0,
+                "unit_price": 38.47,
+                "amount": 384700.0
+              },
+              {
+                "item_code": "FT-LG-T08",
+                "description": "成品最終測試輯℃",
+                "quantity": 1000.0,
+                "unit_price": 0.0,
+                "amount": 1720.0
+              }
+            ],
+            "total_amount": 1156.8,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_004.png",
+          "difficulty": "hard",
+          "ok": 9,
+          "total": 17,
+          "errors": [
+            "customer_name: 旭光體電股份有限公司 ≠ 旭光積體電路股份有限公司",
+            "po_number: P026032914 ≠ PO26032914",
+            "delivery_date: 115//27 ≠ 2026-04-27",
+            "total_amount: 23.0 ≠ 617230.0",
+            "lines[1].item_code: QFN-0505--10 ≠ QFN-0505-C10",
+            "lines[1].unit_price: 3.0 ≠ 3.83",
+            "lines[2].item_code: P-W-12-T01 ≠ CP-WT12-T01",
+            "lines[2].unit_price: 149130.0 ≠ 1491.3"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "旭光體電股份有限公司",
+            "po_number": "P026032914",
+            "order_date": "2026-03-21",
+            "delivery_date": "115//27",
+            "lines": [
+              {
+                "item_code": "BMP-CU-P15",
+                "description": "凸塊隉",
+                "quantity": 10000.0,
+                "unit_price": 39.15,
+                "amount": 391500.0
+              },
+              {
+                "item_code": "QFN-0505--10",
+                "description": "四方平面引封褧5x5mm",
+                "quantity": 20000.0,
+                "unit_price": 3.0,
+                "amount": 76600.0
+              },
+              {
+                "item_code": "P-W-12-T01",
+                "description": "晶測12吋",
+                "quantity": 100.0,
+                "unit_price": 149130.0,
+                "amount": 149130.0
+              }
+            ],
+            "total_amount": 23.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_005.png",
+          "difficulty": "clean",
+          "ok": 12,
+          "total": 13,
+          "errors": [
+            "po_number: P026013525 ≠ PO26013525"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "旭光積體電路股份有限公司",
+            "po_number": "P026013525",
+            "order_date": "2026-01-27",
+            "delivery_date": "2026-03-06",
+            "lines": [
+              {
+                "item_code": "FCBGA-3535-A01",
+                "description": "覆球柵陣列封裝35x35mm",
+                "quantity": 50.0,
+                "unit_price": 173.21,
+                "amount": 8660.5
+              },
+              {
+                "item_code": "QFN-0808-C18",
+                "description": "四方平面引腳封裝8x8mm",
+                "quantity": 10000.0,
+                "unit_price": 5.08,
+                "amount": 50800.0
+              }
+            ],
+            "total_amount": 59460.5,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_006.png",
+          "difficulty": "stamp",
+          "ok": 19,
+          "total": 25,
+          "errors": [
+            "po_number: P026088253 ≠ PO26088253",
+            "total_amount: 44423.4 ≠ 444235.4",
+            "lines[1].amount: 18311040.0 ≠ 183110.4",
+            "lines[3].amount: 980.0 ≠ 71980.0",
+            "lines[4].unit_price: 2719.0 ≠ 273.19",
+            "lines[4].amount: 136500.0 ≠ 136595.0"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "聯創微電子股份有限公司",
+            "po_number": "P026088253",
+            "order_date": "2026-08-25",
+            "delivery_date": "2026-09-02",
+            "lines": [
+              {
+                "item_code": "QFN-0505-C10",
+                "description": "四方平面引腳封裝5x5mm",
+                "quantity": 10000.0,
+                "unit_price": 3.87,
+                "amount": 38700.0
+              },
+              {
+                "item_code": "CP-WT12-T01",
+                "description": "晶圓針測12吋",
+                "quantity": 120.0,
+                "unit_price": 1525.92,
+                "amount": 18311040.0
+              },
+              {
+                "item_code": "QFN-0808-C18",
+                "description": "四方平面引腳封裝8x8mm",
+                "quantity": 2500.0,
+                "unit_price": 5.54,
+                "amount": 13850.0
+              },
+              {
+                "item_code": "BMP-CU-P15",
+                "description": "銅柱凸塊製程",
+                "quantity": 2000.0,
+                "unit_price": 35.99,
+                "amount": 980.0
+              },
+              {
+                "item_code": "FCBGA-4545-B08",
+                "description": "覆球柵陣列封裝45ㄨ45mm",
+                "quantity": 500.0,
+                "unit_price": 2719.0,
+                "amount": 136500.0
+              }
+            ],
+            "total_amount": 44423.4,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_007.png",
+          "difficulty": "noisy",
+          "ok": 9,
+          "total": 13,
+          "errors": [
+            "po_number: P026064694 ≠ PO26064694",
+            "total_amount: 360.0 ≠ 55723.6",
+            "lines[1].unit_price: 3.06 ≠ 13.06",
+            "lines[1].amount: 650.0 ≠ 32650.0"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "鼎峰電子股份有限公司",
+            "po_number": "P026064694",
+            "order_date": "2026-06-08",
+            "delivery_date": "2026-07-23",
+            "lines": [
+              {
+                "item_code": "FCBGA-3535-A01",
+                "description": "覆晶球柵陣列封裝35x35mm",
+                "quantity": 120.0,
+                "unit_price": 192.28,
+                "amount": 23073.6
+              },
+              {
+                "item_code": "WB-AU08-S05",
+                "description": "金線打線封裝0.8mil",
+                "quantity": 2500.0,
+                "unit_price": 3.06,
+                "amount": 650.0
+              }
+            ],
+            "total_amount": 360.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_008.png",
+          "difficulty": "hard",
+          "ok": 12,
+          "total": 17,
+          "errors": [
+            "customer_name: 鼎蜂電子股份有限公司 ≠ 鼎峰電子股份有限公司",
+            "po_number: P026044525 ≠ PO26044525",
+            "total_amount: 200.0 ≠ 157200.0",
+            "lines[2].item_code: F-BGA-4545-808 ≠ FCBGA-4545-B08",
+            "lines[2].unit_price: 230.0 ≠ 282.3"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "鼎蜂電子股份有限公司",
+            "po_number": "P026044525",
+            "order_date": "2026-04-09",
+            "delivery_date": "2026-05-12",
+            "lines": [
+              {
+                "item_code": "BMP-CU-P15",
+                "description": "鋼凸塊程",
+                "quantity": 2500.0,
+                "unit_price": 35.85,
+                "amount": 89625.0
+              },
+              {
+                "item_code": "FCBGA-3535-A01",
+                "description": "球列封褧35x35EE",
+                "quantity": 300.0,
+                "unit_price": 178.2,
+                "amount": 53460.0
+              },
+              {
+                "item_code": "F-BGA-4545-808",
+                "description": "晶陣列封褧45x45m2",
+                "quantity": 50.0,
+                "unit_price": 230.0,
+                "amount": 14115.0
+              }
+            ],
+            "total_amount": 200.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_009.png",
+          "difficulty": "clean",
+          "ok": 12,
+          "total": 17,
+          "errors": [
+            "po_number: P026081910 ≠ PO26081910",
+            "lines[0].item_code: S-P-1210-M02 ≠ SIP-1210-M02",
+            "lines[0].unit_price: 10042.0 ≠ 100.42",
+            "lines[1].unit_price: 24435.0 ≠ 244.35",
+            "lines[2].item_code: WB-CUIO-SOI ≠ WB-CU10-S01"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "宏晶半導體股份有限公司",
+            "po_number": "P026081910",
+            "order_date": "2026-08-10",
+            "delivery_date": "2026-08-22",
+            "lines": [
+              {
+                "item_code": "S-P-1210-M02",
+                "description": "系統級封裝模組12x10mm",
+                "quantity": 300.0,
+                "unit_price": 10042.0,
+                "amount": 30126.0
+              },
+              {
+                "item_code": "FCBGA-4545-B08",
+                "description": "覆球柵陣列封裝45ㄨ45mm",
+                "quantity": 500.0,
+                "unit_price": 24435.0,
+                "amount": 122175.0
+              },
+              {
+                "item_code": "WB-CUIO-SOI",
+                "description": "銅線打線封裝1.0mil",
+                "quantity": 500.0,
+                "unit_price": 8.2,
+                "amount": 4100.0
+              }
+            ],
+            "total_amount": 156401.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_010.png",
+          "difficulty": "stamp",
+          "ok": 18,
+          "total": 25,
+          "errors": [
+            "po_number: P026025526 ≠ PO26025526",
+            "total_amount: 31668.0 ≠ 316668.0",
+            "lines[0].item_code: WB-CUIO-SOI ≠ WB-CU10-S01",
+            "lines[2].item_code: S-P-1210-M02 ≠ SIP-1210-M02",
+            "lines[3].unit_price: 0.0 ≠ 5.47",
+            "lines[4].unit_price: 3833.0 ≠ 38.33",
+            "lines[4].amount: 1165.0 ≠ 19165.0"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "晶元通訊有限公司",
+            "po_number": "P026025526",
+            "order_date": "2026-02-27",
+            "delivery_date": "2026-04-08",
+            "lines": [
+              {
+                "item_code": "WB-CUIO-SOI",
+                "description": "銅線打線封裝1.0mil",
+                "quantity": 2500.0,
+                "unit_price": 8.98,
+                "amount": 22450.0
+              },
+              {
+                "item_code": "WB-AU08-S05",
+                "description": "金線打線封裝0.8mil",
+                "quantity": 20000.0,
+                "unit_price": 12.07,
+                "amount": 241400.0
+              },
+              {
+                "item_code": "S-P-1210-M02",
+                "description": "系統級封裝模組12x10mm",
+                "quantity": 200.0,
+                "unit_price": 99.89,
+                "amount": 19978.0
+              },
+              {
+                "item_code": "QFN-0808-C18",
+                "description": "四方平面引腳封裝8x8mm",
+                "quantity": 2500.0,
+                "unit_price": 0.0,
+                "amount": 13675.0
+              },
+              {
+                "item_code": "BMP-CU-P15",
+                "description": "銅柱凸塊製程",
+                "quantity": 500.0,
+                "unit_price": 3833.0,
+                "amount": 1165.0
+              }
+            ],
+            "total_amount": 31668.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_011.png",
+          "difficulty": "noisy",
+          "ok": 18,
+          "total": 25,
+          "errors": [
+            "po_number: P026052110 ≠ PO26052110",
+            "total_amount: 7766.0 ≠ 175766.0",
+            "lines[0].item_code: S-P-1210-M02 ≠ SIP-1210-M02",
+            "lines[1].item_code: CP--12-T01 ≠ CP-WT12-T01",
+            "lines[2].unit_price: 28334.0 ≠ 283.34",
+            "lines[2].amount: 283300.0 ≠ 28334.0",
+            "lines[4].unit_price: 0.0 ≠ 1.81"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "鼎峰電子股份有限公司",
+            "po_number": "P026052110",
+            "order_date": "2026-05-20",
+            "delivery_date": "2026-06-16",
+            "lines": [
+              {
+                "item_code": "S-P-1210-M02",
+                "description": "系統級封裝模組12x10mm",
+                "quantity": 100.0,
+                "unit_price": 90.0,
+                "amount": 9000.0
+              },
+              {
+                "item_code": "CP--12-T01",
+                "description": "晶圓針測12吋",
+                "quantity": 50.0,
+                "unit_price": 1415.24,
+                "amount": 70762.0
+              },
+              {
+                "item_code": "FCBGA-4545-B08",
+                "description": "覆晶球柵陣列封裝45x45mm",
+                "quantity": 100.0,
+                "unit_price": 28334.0,
+                "amount": 283300.0
+              },
+              {
+                "item_code": "WB-AU08-S05",
+                "description": "金線打線封裝O.8miI",
+                "quantity": 5000.0,
+                "unit_price": 12.81,
+                "amount": 64050.0
+              },
+              {
+                "item_code": "FT-LG-T08",
+                "description": "成品最終測試輯℃",
+                "quantity": 2000.0,
+                "unit_price": 0.0,
+                "amount": 3620.0
+              }
+            ],
+            "total_amount": 7766.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_012.png",
+          "difficulty": "hard",
+          "ok": 11,
+          "total": 21,
+          "errors": [
+            "customer_name: 旭光櫝體電路股份有限公司 ≠ 旭光積體電路股份有限公司",
+            "po_number: P026086551 ≠ PO26086551",
+            "total_amount: 142.0 ≠ 41142.0",
+            "lines[0].item_code: WB-CU10-s01 ≠ WB-CU10-S01",
+            "lines[1].item_code: FCBGA-454508 ≠ FCBGA-4545-B08",
+            "lines[1].amount: 266200.0 ≠ 26628.0",
+            "lines[2].quantity: 2.58 ≠ 2500",
+            "lines[2].unit_price: 1.0 ≠ 1.94",
+            "lines[3].item_code: S-P4210-M02 ≠ SIP-1210-M02",
+            "lines[3].unit_price: 10138.0 ≠ 101.38"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "旭光櫝體電路股份有限公司",
+            "po_number": "P026086551",
+            "order_date": "2026-08-15",
+            "delivery_date": "2026-09-25",
+            "lines": [
+              {
+                "item_code": "WB-CU10-s01",
+                "description": "線打線封褧1,0而|",
+                "quantity": 500.0,
+                "unit_price": 9.19,
+                "amount": 4595.0
+              },
+              {
+                "item_code": "FCBGA-454508",
+                "description": "球陣列封褧45x45EE",
+                "quantity": 100.0,
+                "unit_price": 266.28,
+                "amount": 266200.0
+              },
+              {
+                "item_code": "FT-LG-T08",
+                "description": "成品最終試(",
+                "quantity": 2.58,
+                "unit_price": 1.0,
+                "amount": 4850.0
+              },
+              {
+                "item_code": "S-P4210-M02",
+                "description": "系封褧組12乂10mm",
+                "quantity": 50.0,
+                "unit_price": 10138.0,
+                "amount": 5069.0
+              }
+            ],
+            "total_amount": 142.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_013.png",
+          "difficulty": "clean",
+          "ok": 19,
+          "total": 21,
+          "errors": [
+            "po_number: P026076954 ≠ PO26076954",
+            "lines[2].unit_price: 541.0 ≠ 5.41"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "宏晶半導體股份有限公司",
+            "po_number": "P026076954",
+            "order_date": "2026-07-16",
+            "delivery_date": "2026-07-26",
+            "lines": [
+              {
+                "item_code": "FCBGA-3535-A01",
+                "description": "覆球柵陣列封裝35x35mm",
+                "quantity": 500.0,
+                "unit_price": 195.13,
+                "amount": 97565.0
+              },
+              {
+                "item_code": "FT-LG-T08",
+                "description": "成品最終測試邏輯℃",
+                "quantity": 20000.0,
+                "unit_price": 1.77,
+                "amount": 35400.0
+              },
+              {
+                "item_code": "QFN-0808-C18",
+                "description": "四方平面引腳封裝8x8mm",
+                "quantity": 12000.0,
+                "unit_price": 541.0,
+                "amount": 64920.0
+              },
+              {
+                "item_code": "BMP-CU-P15",
+                "description": "銅柱凸塊製程",
+                "quantity": 12000.0,
+                "unit_price": 37.9,
+                "amount": 454800.0
+              }
+            ],
+            "total_amount": 652685.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_014.png",
+          "difficulty": "stamp",
+          "ok": 14,
+          "total": 21,
+          "errors": [
+            "po_number: P026054020 ≠ PO26054020",
+            "total_amount: 0.0 ≠ 566235.0",
+            "lines[0].unit_price: 25339.0 ≠ 253.39",
+            "lines[1].item_code: WB-CUIO-SOI ≠ WB-CU10-S01",
+            "lines[3].item_code: S-P-1210-M02 ≠ SIP-1210-M02",
+            "lines[3].unit_price: 10.0 ≠ 103.17",
+            "lines[3].amount: 31.0 ≠ 30951.0"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "鼎峰電子股份有限公司",
+            "po_number": "P026054020",
+            "order_date": "2026-05-17",
+            "delivery_date": "2026-06-21",
+            "lines": [
+              {
+                "item_code": "FCBGA-4545-B08",
+                "description": "覆球柵陣列封裝45ㄨ45mm",
+                "quantity": 100.0,
+                "unit_price": 25339.0,
+                "amount": 25339.0
+              },
+              {
+                "item_code": "WB-CUIO-SOI",
+                "description": "銅線打線封裝1.0mil",
+                "quantity": 10000.0,
+                "unit_price": 9.5,
+                "amount": 95000.0
+              },
+              {
+                "item_code": "CP-WT12-T01",
+                "description": "晶圓針測12吋",
+                "quantity": 300.0,
+                "unit_price": 1383.15,
+                "amount": 414945.0
+              },
+              {
+                "item_code": "S-P-1210-M02",
+                "description": "系統級封裝模組12x10mm",
+                "quantity": 300.0,
+                "unit_price": 10.0,
+                "amount": 31.0
+              }
+            ],
+            "total_amount": 0.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_015.png",
+          "difficulty": "noisy",
+          "ok": 4,
+          "total": 9,
+          "errors": [
+            "po_number: P026065742 ≠ PO26065742",
+            "total_amount: 10.0 ≠ 107160.0",
+            "lines[0].item_code: WB-CUIO-SOI ≠ WB-CU10-S01",
+            "lines[0].unit_price: 8.0 ≠ 8.93",
+            "lines[0].amount: 7160.0 ≠ 107160.0"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "旭光積體電路股份有限公司",
+            "po_number": "P026065742",
+            "order_date": "2026-06-05",
+            "delivery_date": "2026-06-30",
+            "lines": [
+              {
+                "item_code": "WB-CUIO-SOI",
+                "description": "銅線打線封裝l.omil",
+                "quantity": 12000.0,
+                "unit_price": 8.0,
+                "amount": 7160.0
+              }
+            ],
+            "total_amount": 10.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_016.png",
+          "difficulty": "hard",
+          "ok": 5,
+          "total": 9,
+          "errors": [
+            "po_number: P026019462 ≠ PO26019462",
+            "total_amount: 6320.0 ≠ 61320.0",
+            "lines[0].item_code: QFN-080818 ≠ QFN-0808-C18",
+            "lines[0].amount: 1320.0 ≠ 61320.0"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "晶元通訊有限公司",
+            "po_number": "P026019462",
+            "order_date": "2026-01-18",
+            "delivery_date": "2026-02-09",
+            "lines": [
+              {
+                "item_code": "QFN-080818",
+                "description": "四方平面無引封褧8x8mm",
+                "quantity": 12000.0,
+                "unit_price": 5.11,
+                "amount": 1320.0
+              }
+            ],
+            "total_amount": 6320.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_017.png",
+          "difficulty": "clean",
+          "ok": 8,
+          "total": 9,
+          "errors": [
+            "po_number: P026053889 ≠ PO26053889"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "晶元通訊有限公司",
+            "po_number": "P026053889",
+            "order_date": "2026-05-15",
+            "delivery_date": "2026-06-19",
+            "lines": [
+              {
+                "item_code": "QFN-0505-C10",
+                "description": "四方平面引腳封裝5x5mm",
+                "quantity": 2500.0,
+                "unit_price": 3.59,
+                "amount": 8975.0
+              }
+            ],
+            "total_amount": 8975.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_018.png",
+          "difficulty": "stamp",
+          "ok": 15,
+          "total": 21,
+          "errors": [
+            "po_number: P026039137 ≠ PO26039137",
+            "total_amount: 0.0 ≠ 62863.0",
+            "lines[0].item_code: S-P-1210-M02 ≠ SIP-1210-M02",
+            "lines[2].item_code: WB-CUIO-SOI ≠ WB-CU10-S01",
+            "lines[3].unit_price: 0.0 ≠ 5.18",
+            "lines[3].amount: 5900.0 ≠ 25900.0"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "旭光積體電路股份有限公司",
+            "po_number": "P026039137",
+            "order_date": "2026-03-06",
+            "delivery_date": "2026-04-05",
+            "lines": [
+              {
+                "item_code": "S-P-1210-M02",
+                "description": "系統級封裝模組12x10mm",
+                "quantity": 120.0,
+                "unit_price": 90.65,
+                "amount": 10878.0
+              },
+              {
+                "item_code": "FT-LG-T08",
+                "description": "成品最終測試邏輯℃",
+                "quantity": 12000.0,
+                "unit_price": 1.8,
+                "amount": 21600.0
+              },
+              {
+                "item_code": "WB-CUIO-SOI",
+                "description": "銅線打線封裝1.0mil",
+                "quantity": 500.0,
+                "unit_price": 8.97,
+                "amount": 4485.0
+              },
+              {
+                "item_code": "QFN-0808-C18",
+                "description": "四方平面引腳封裝8x8mm",
+                "quantity": 5000.0,
+                "unit_price": 0.0,
+                "amount": 5900.0
+              }
+            ],
+            "total_amount": 0.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_019.png",
+          "difficulty": "noisy",
+          "ok": 16,
+          "total": 25,
+          "errors": [
+            "po_number: P026014336 ≠ PO26014336",
+            "total_amount: 5324.0 ≠ 532492.0",
+            "lines[0].item_code: S-p-1210-M02 ≠ SIP-1210-M02",
+            "lines[1].item_code: cp-WT12-T01 ≠ CP-WT12-T01",
+            "lines[2].item_code: WB-AU08-s05 ≠ WB-AU08-S05",
+            "lines[3].item_code: WB-CUIO-SOI ≠ WB-CU10-S01",
+            "lines[3].unit_price: 842.0 ≠ 8.12",
+            "lines[3].amount: 440.0 ≠ 97440.0",
+            "lines[4].unit_price: 0.0 ≠ 3.46"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "旭光積體電路股份有限公司",
+            "po_number": "P026014336",
+            "order_date": "2026-01-29",
+            "delivery_date": "2026-03-04",
+            "lines": [
+              {
+                "item_code": "S-p-1210-M02",
+                "description": "糸統級封裝模組12ㄨ10mm",
+                "quantity": 300.0,
+                "unit_price": 97.0,
+                "amount": 29100.0
+              },
+              {
+                "item_code": "cp-WT12-T01",
+                "description": "晶圓針側12时",
+                "quantity": 200.0,
+                "unit_price": 1361.61,
+                "amount": 272322.0
+              },
+              {
+                "item_code": "WB-AU08-s05",
+                "description": "金線打線封裝0.8m",
+                "quantity": 10000.0,
+                "unit_price": 13.19,
+                "amount": 131900.0
+              },
+              {
+                "item_code": "WB-CUIO-SOI",
+                "description": "銅線打線封裝1.0mⅡ",
+                "quantity": 12000.0,
+                "unit_price": 842.0,
+                "amount": 440.0
+              },
+              {
+                "item_code": "QFN-0505-C10",
+                "description": "四方平面無引腳封裝5x5mm",
+                "quantity": 500.0,
+                "unit_price": 0.0,
+                "amount": 1730.0
+              }
+            ],
+            "total_amount": 5324.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_020.png",
+          "difficulty": "hard",
+          "ok": 14,
+          "total": 25,
+          "errors": [
+            "customer_name: 旭光櫝體電路股份有限公司 ≠ 旭光積體電路股份有限公司",
+            "po_number: P026073400 ≠ PO26073400",
+            "order_date: 2026p/17 ≠ 2026-07-17",
+            "total_amount: 60.0 ≠ 309041.6",
+            "lines[0].item_code: F-BGA-4545-808 ≠ FCBGA-4545-B08",
+            "lines[1].item_code: QN-0808--18 ≠ QFN-0808-C18",
+            "lines[1].amount: 800.0 ≠ 64800.0",
+            "lines[3].item_code: FCBGA-353S-A01 ≠ FCBGA-3535-A01",
+            "lines[4].item_code: WT12-T01 ≠ CP-WT12-T01",
+            "lines[4].unit_price: 1.0 ≠ 1417.05",
+            "lines[4].amount: 7086.0 ≠ 170046.0"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "旭光櫝體電路股份有限公司",
+            "po_number": "P026073400",
+            "order_date": "2026p/17",
+            "delivery_date": "2026-07-26",
+            "lines": [
+              {
+                "item_code": "F-BGA-4545-808",
+                "description": "晶列封褧45x45EE",
+                "quantity": 200.0,
+                "unit_price": 251.06,
+                "amount": 50212.0
+              },
+              {
+                "item_code": "QN-0808--18",
+                "description": "四方平面無引封褧8x8mm",
+                "quantity": 12000.0,
+                "unit_price": 5.4,
+                "amount": 800.0
+              },
+              {
+                "item_code": "FT-LG-T08",
+                "description": "成品最終試",
+                "quantity": 2000.0,
+                "unit_price": 1.85,
+                "amount": 3700.0
+              },
+              {
+                "item_code": "FCBGA-353S-A01",
+                "description": "晶列装35乂35mm",
+                "quantity": 120.0,
+                "unit_price": 169.03,
+                "amount": 20283.6
+              },
+              {
+                "item_code": "WT12-T01",
+                "description": "晶針測12吋",
+                "quantity": 120.0,
+                "unit_price": 1.0,
+                "amount": 7086.0
+              }
+            ],
+            "total_amount": 60.0,
+            "uncertain_fields": []
+          }
+        }
+      ]
+    },
+    {
+      "name": "② ＋影像前處理",
+      "mode": "baseline",
+      "field_accuracy": 0.7789473684210526,
+      "doc_accuracy": 0.0,
+      "auto_release": 0,
+      "auto_release_correct": 0,
+      "api_calls": 0,
+      "seconds": 5.0,
+      "docs": [
+        {
+          "file": "order_001.png",
+          "difficulty": "clean",
+          "ok": 14,
+          "total": 17,
+          "errors": [
+            "po_number: P026024582 ≠ PO26024582",
+            "lines[0].unit_price: 535.0 ≠ 5.35",
+            "lines[2].unit_price: 333.0 ≠ 3.33"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "旭光積體電路股份有限公司",
+            "po_number": "P026024582",
+            "order_date": "2026-02-02",
+            "delivery_date": "2026-02-10",
+            "lines": [
+              {
+                "item_code": "QFN-0808-C18",
+                "description": "四方平面引腳封裝8x8mm",
+                "quantity": 1000.0,
+                "unit_price": 535.0,
+                "amount": 5350.0
+              },
+              {
+                "item_code": "BMP-CU-P15",
+                "description": "銅柱凸塊製程",
+                "quantity": 1000.0,
+                "unit_price": 38.55,
+                "amount": 38550.0
+              },
+              {
+                "item_code": "QFN-0505-C10",
+                "description": "四方平面引腳封裝5x5mm",
+                "quantity": 500.0,
+                "unit_price": 333.0,
+                "amount": 1665.0
+              }
+            ],
+            "total_amount": 45565.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_002.png",
+          "difficulty": "stamp",
+          "ok": 22,
+          "total": 25,
+          "errors": [
+            "po_number: P026066514 ≠ PO26066514",
+            "lines[0].unit_price: 546.0 ≠ 5.46",
+            "lines[2].item_code: S-P-1210-M02 ≠ SIP-1210-M02"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "鼎峰電子股份有限公司",
+            "po_number": "P026066514",
+            "order_date": "2026-06-08",
+            "delivery_date": "2026-06-16",
+            "lines": [
+              {
+                "item_code": "QFN-0808-C18",
+                "description": "四方平面引腳封裝8x8mm",
+                "quantity": 5000.0,
+                "unit_price": 546.0,
+                "amount": 27300.0
+              },
+              {
+                "item_code": "FT-LG-T08",
+                "description": "成品最終測試邏輯℃",
+                "quantity": 500.0,
+                "unit_price": 1.93,
+                "amount": 965.0
+              },
+              {
+                "item_code": "S-P-1210-M02",
+                "description": "系統級封裝模組12x10mm",
+                "quantity": 100.0,
+                "unit_price": 99.04,
+                "amount": 9904.0
+              },
+              {
+                "item_code": "FCBGA-4545-B08",
+                "description": "覆球柵陣列封裝45ㄨ45mm",
+                "quantity": 120.0,
+                "unit_price": 255.58,
+                "amount": 30669.6
+              },
+              {
+                "item_code": "BMP-CU-P15",
+                "description": "銅柱凸塊製程",
+                "quantity": 2500.0,
+                "unit_price": 40.78,
+                "amount": 101950.0
+              }
+            ],
+            "total_amount": 170788.6,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_003.png",
+          "difficulty": "noisy",
+          "ok": 21,
+          "total": 25,
+          "errors": [
+            "po_number: P026044733 ≠ PO26044733",
+            "lines[0].item_code: WB-AU08-s05 ≠ WB-AU08-S05",
+            "lines[1].item_code: FCBGA-3535-AOI ≠ FCBGA-3535-A01",
+            "lines[2].item_code: CP-WT12-TOI ≠ CP-WT12-T01"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "宏晶半導體股份有限公司",
+            "po_number": "P026044733",
+            "order_date": "2026-04-06",
+            "delivery_date": "2026-05-05",
+            "lines": [
+              {
+                "item_code": "WB-AU08-s05",
+                "description": "金打封裝0.8m",
+                "quantity": 12000.0,
+                "unit_price": 11.66,
+                "amount": 139920.0
+              },
+              {
+                "item_code": "FCBGA-3535-AOI",
+                "description": "覆晶球柵陣列封裝35x35mm",
+                "quantity": 120.0,
+                "unit_price": 191.59,
+                "amount": 22990.8
+              },
+              {
+                "item_code": "CP-WT12-TOI",
+                "description": "晶圓針測12吋",
+                "quantity": 300.0,
+                "unit_price": 1539.42,
+                "amount": 461826.0
+              },
+              {
+                "item_code": "BMP-CU-P15",
+                "description": "銅柱凸塊製程",
+                "quantity": 10000.0,
+                "unit_price": 38.47,
+                "amount": 384700.0
+              },
+              {
+                "item_code": "FT-LG-T08",
+                "description": "成品最終測試輯℃",
+                "quantity": 1000.0,
+                "unit_price": 1.72,
+                "amount": 1720.0
+              }
+            ],
+            "total_amount": 1011156.8,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_004.png",
+          "difficulty": "hard",
+          "ok": 10,
+          "total": 17,
+          "errors": [
+            "customer_name: 旭光體電股份有限公司 ≠ 旭光積體電路股份有限公司",
+            "po_number: P026032914 ≠ PO26032914",
+            "delivery_date: 115//27 ≠ 2026-04-27",
+            "total_amount: 67230.0 ≠ 617230.0",
+            "lines[1].item_code: QFN-0505--10 ≠ QFN-0505-C10",
+            "lines[2].item_code: P-W-12-T01 ≠ CP-WT12-T01",
+            "lines[2].unit_price: 149130.0 ≠ 1491.3"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "旭光體電股份有限公司",
+            "po_number": "P026032914",
+            "order_date": "2026-03-21",
+            "delivery_date": "115//27",
+            "lines": [
+              {
+                "item_code": "BMP-CU-P15",
+                "description": "凸塊隉",
+                "quantity": 10000.0,
+                "unit_price": 39.15,
+                "amount": 391500.0
+              },
+              {
+                "item_code": "QFN-0505--10",
+                "description": "四方平面引封褧5x5mm",
+                "quantity": 20000.0,
+                "unit_price": 3.83,
+                "amount": 76600.0
+              },
+              {
+                "item_code": "P-W-12-T01",
+                "description": "晶測12吋",
+                "quantity": 100.0,
+                "unit_price": 149130.0,
+                "amount": 149130.0
+              }
+            ],
+            "total_amount": 67230.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_005.png",
+          "difficulty": "clean",
+          "ok": 12,
+          "total": 13,
+          "errors": [
+            "po_number: P026013525 ≠ PO26013525"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "旭光積體電路股份有限公司",
+            "po_number": "P026013525",
+            "order_date": "2026-01-27",
+            "delivery_date": "2026-03-06",
+            "lines": [
+              {
+                "item_code": "FCBGA-3535-A01",
+                "description": "覆球柵陣列封裝35x35mm",
+                "quantity": 50.0,
+                "unit_price": 173.21,
+                "amount": 8660.5
+              },
+              {
+                "item_code": "QFN-0808-C18",
+                "description": "四方平面引腳封裝8x8mm",
+                "quantity": 10000.0,
+                "unit_price": 5.08,
+                "amount": 50800.0
+              }
+            ],
+            "total_amount": 59460.5,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_006.png",
+          "difficulty": "stamp",
+          "ok": 22,
+          "total": 25,
+          "errors": [
+            "po_number: P026088253 ≠ PO26088253",
+            "lines[1].amount: 18311040.0 ≠ 183110.4",
+            "lines[4].unit_price: 27319.0 ≠ 273.19"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "聯創微電子股份有限公司",
+            "po_number": "P026088253",
+            "order_date": "2026-08-25",
+            "delivery_date": "2026-09-02",
+            "lines": [
+              {
+                "item_code": "QFN-0505-C10",
+                "description": "四方平面引腳封裝5x5mm",
+                "quantity": 10000.0,
+                "unit_price": 3.87,
+                "amount": 38700.0
+              },
+              {
+                "item_code": "CP-WT12-T01",
+                "description": "晶圓針測12吋",
+                "quantity": 120.0,
+                "unit_price": 1525.92,
+                "amount": 18311040.0
+              },
+              {
+                "item_code": "QFN-0808-C18",
+                "description": "四方平面引腳封裝8x8mm",
+                "quantity": 2500.0,
+                "unit_price": 5.54,
+                "amount": 13850.0
+              },
+              {
+                "item_code": "BMP-CU-P15",
+                "description": "銅柱凸塊製程",
+                "quantity": 2000.0,
+                "unit_price": 35.99,
+                "amount": 71980.0
+              },
+              {
+                "item_code": "FCBGA-4545-B08",
+                "description": "覆球柵陣列封裝45ㄨ45mm",
+                "quantity": 500.0,
+                "unit_price": 27319.0,
+                "amount": 136595.0
+              }
+            ],
+            "total_amount": 444235.4,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_007.png",
+          "difficulty": "noisy",
+          "ok": 12,
+          "total": 13,
+          "errors": [
+            "po_number: P026064694 ≠ PO26064694"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "鼎峰電子股份有限公司",
+            "po_number": "P026064694",
+            "order_date": "2026-06-08",
+            "delivery_date": "2026-07-23",
+            "lines": [
+              {
+                "item_code": "FCBGA-3535-A01",
+                "description": "覆晶球柵陣列封裝35x35mm",
+                "quantity": 120.0,
+                "unit_price": 192.28,
+                "amount": 23073.6
+              },
+              {
+                "item_code": "WB-AU08-S05",
+                "description": "金線打線封裝0.8mil",
+                "quantity": 2500.0,
+                "unit_price": 13.06,
+                "amount": 32650.0
+              }
+            ],
+            "total_amount": 55723.6,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_008.png",
+          "difficulty": "hard",
+          "ok": 12,
+          "total": 17,
+          "errors": [
+            "customer_name: 鼎蜂電子股份有限公司 ≠ 鼎峰電子股份有限公司",
+            "po_number: P026044525 ≠ PO26044525",
+            "total_amount: 157200.8 ≠ 157200.0",
+            "lines[2].item_code: F-BGA-4545-808 ≠ FCBGA-4545-B08",
+            "lines[2].unit_price: 28230.0 ≠ 282.3"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "鼎蜂電子股份有限公司",
+            "po_number": "P026044525",
+            "order_date": "2026-04-09",
+            "delivery_date": "2026-05-12",
+            "lines": [
+              {
+                "item_code": "BMP-CU-P15",
+                "description": "鋼凸塊程",
+                "quantity": 2500.0,
+                "unit_price": 35.85,
+                "amount": 89625.0
+              },
+              {
+                "item_code": "FCBGA-3535-A01",
+                "description": "球列封褧35x35EE",
+                "quantity": 300.0,
+                "unit_price": 178.2,
+                "amount": 53460.0
+              },
+              {
+                "item_code": "F-BGA-4545-808",
+                "description": "晶陣列封褧45x45m2",
+                "quantity": 50.0,
+                "unit_price": 28230.0,
+                "amount": 14115.0
+              }
+            ],
+            "total_amount": 157200.8,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_009.png",
+          "difficulty": "clean",
+          "ok": 12,
+          "total": 17,
+          "errors": [
+            "po_number: P026081910 ≠ PO26081910",
+            "lines[0].item_code: S-P-1210-M02 ≠ SIP-1210-M02",
+            "lines[0].unit_price: 10042.0 ≠ 100.42",
+            "lines[1].unit_price: 24435.0 ≠ 244.35",
+            "lines[2].item_code: WB-CUIO-SOI ≠ WB-CU10-S01"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "宏晶半導體股份有限公司",
+            "po_number": "P026081910",
+            "order_date": "2026-08-10",
+            "delivery_date": "2026-08-22",
+            "lines": [
+              {
+                "item_code": "S-P-1210-M02",
+                "description": "系統級封裝模組12x10mm",
+                "quantity": 300.0,
+                "unit_price": 10042.0,
+                "amount": 30126.0
+              },
+              {
+                "item_code": "FCBGA-4545-B08",
+                "description": "覆球柵陣列封裝45ㄨ45mm",
+                "quantity": 500.0,
+                "unit_price": 24435.0,
+                "amount": 122175.0
+              },
+              {
+                "item_code": "WB-CUIO-SOI",
+                "description": "銅線打線封裝1.0mil",
+                "quantity": 500.0,
+                "unit_price": 8.2,
+                "amount": 4100.0
+              }
+            ],
+            "total_amount": 156401.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_010.png",
+          "difficulty": "stamp",
+          "ok": 20,
+          "total": 25,
+          "errors": [
+            "po_number: P026025526 ≠ PO26025526",
+            "lines[0].item_code: WB-CUIO-SOI ≠ WB-CU10-S01",
+            "lines[2].item_code: S-P-1210-M02 ≠ SIP-1210-M02",
+            "lines[3].unit_price: 0.0 ≠ 5.47",
+            "lines[4].unit_price: 3833.0 ≠ 38.33"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "晶元通訊有限公司",
+            "po_number": "P026025526",
+            "order_date": "2026-02-27",
+            "delivery_date": "2026-04-08",
+            "lines": [
+              {
+                "item_code": "WB-CUIO-SOI",
+                "description": "銅線打線封裝1.0mil",
+                "quantity": 2500.0,
+                "unit_price": 8.98,
+                "amount": 22450.0
+              },
+              {
+                "item_code": "WB-AU08-S05",
+                "description": "金線打線封裝0.8mil",
+                "quantity": 20000.0,
+                "unit_price": 12.07,
+                "amount": 241400.0
+              },
+              {
+                "item_code": "S-P-1210-M02",
+                "description": "系統級封裝模組12x10mm",
+                "quantity": 200.0,
+                "unit_price": 99.89,
+                "amount": 19978.0
+              },
+              {
+                "item_code": "QFN-0808-C18",
+                "description": "四方平面引腳封裝8x8mm",
+                "quantity": 2500.0,
+                "unit_price": 0.0,
+                "amount": 13675.0
+              },
+              {
+                "item_code": "BMP-CU-P15",
+                "description": "銅柱凸塊製程",
+                "quantity": 500.0,
+                "unit_price": 3833.0,
+                "amount": 19165.0
+              }
+            ],
+            "total_amount": 316668.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_011.png",
+          "difficulty": "noisy",
+          "ok": 20,
+          "total": 25,
+          "errors": [
+            "po_number: P026052110 ≠ PO26052110",
+            "lines[0].item_code: S-P-1210-M02 ≠ SIP-1210-M02",
+            "lines[1].item_code: CP--12-T01 ≠ CP-WT12-T01",
+            "lines[2].unit_price: 28334.0 ≠ 283.34",
+            "lines[2].amount: 283300.0 ≠ 28334.0"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "鼎峰電子股份有限公司",
+            "po_number": "P026052110",
+            "order_date": "2026-05-20",
+            "delivery_date": "2026-06-16",
+            "lines": [
+              {
+                "item_code": "S-P-1210-M02",
+                "description": "系統級封裝模組12x10mm",
+                "quantity": 100.0,
+                "unit_price": 90.0,
+                "amount": 9000.0
+              },
+              {
+                "item_code": "CP--12-T01",
+                "description": "晶圓針測12吋",
+                "quantity": 50.0,
+                "unit_price": 1415.24,
+                "amount": 70762.0
+              },
+              {
+                "item_code": "FCBGA-4545-B08",
+                "description": "覆晶球柵陣列封裝45x45mm",
+                "quantity": 100.0,
+                "unit_price": 28334.0,
+                "amount": 283300.0
+              },
+              {
+                "item_code": "WB-AU08-S05",
+                "description": "金線打線封裝O.8miI",
+                "quantity": 5000.0,
+                "unit_price": 12.81,
+                "amount": 64050.0
+              },
+              {
+                "item_code": "FT-LG-T08",
+                "description": "成品最終測試輯℃",
+                "quantity": 2000.0,
+                "unit_price": 1.81,
+                "amount": 3620.0
+              }
+            ],
+            "total_amount": 175766.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_012.png",
+          "difficulty": "hard",
+          "ok": 13,
+          "total": 21,
+          "errors": [
+            "customer_name: 旭光櫝體電路股份有限公司 ≠ 旭光積體電路股份有限公司",
+            "po_number: P026086551 ≠ PO26086551",
+            "lines[0].item_code: WB-CU10-s01 ≠ WB-CU10-S01",
+            "lines[1].item_code: FCBGA-454508 ≠ FCBGA-4545-B08",
+            "lines[1].amount: 266200.0 ≠ 26628.0",
+            "lines[2].quantity: 2.58 ≠ 2500",
+            "lines[3].item_code: S-P4210-M02 ≠ SIP-1210-M02",
+            "lines[3].unit_price: 10138.0 ≠ 101.38"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "旭光櫝體電路股份有限公司",
+            "po_number": "P026086551",
+            "order_date": "2026-08-15",
+            "delivery_date": "2026-09-25",
+            "lines": [
+              {
+                "item_code": "WB-CU10-s01",
+                "description": "線打線封褧1,0而|",
+                "quantity": 500.0,
+                "unit_price": 9.19,
+                "amount": 4595.0
+              },
+              {
+                "item_code": "FCBGA-454508",
+                "description": "球陣列封褧45x45EE",
+                "quantity": 100.0,
+                "unit_price": 266.28,
+                "amount": 266200.0
+              },
+              {
+                "item_code": "FT-LG-T08",
+                "description": "成品最終試(",
+                "quantity": 2.58,
+                "unit_price": 1.94,
+                "amount": 4850.0
+              },
+              {
+                "item_code": "S-P4210-M02",
+                "description": "系封褧組12乂10mm",
+                "quantity": 50.0,
+                "unit_price": 10138.0,
+                "amount": 5069.0
+              }
+            ],
+            "total_amount": 41142.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_013.png",
+          "difficulty": "clean",
+          "ok": 19,
+          "total": 21,
+          "errors": [
+            "po_number: P026076954 ≠ PO26076954",
+            "lines[2].unit_price: 541.0 ≠ 5.41"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "宏晶半導體股份有限公司",
+            "po_number": "P026076954",
+            "order_date": "2026-07-16",
+            "delivery_date": "2026-07-26",
+            "lines": [
+              {
+                "item_code": "FCBGA-3535-A01",
+                "description": "覆球柵陣列封裝35x35mm",
+                "quantity": 500.0,
+                "unit_price": 195.13,
+                "amount": 97565.0
+              },
+              {
+                "item_code": "FT-LG-T08",
+                "description": "成品最終測試邏輯℃",
+                "quantity": 20000.0,
+                "unit_price": 1.77,
+                "amount": 35400.0
+              },
+              {
+                "item_code": "QFN-0808-C18",
+                "description": "四方平面引腳封裝8x8mm",
+                "quantity": 12000.0,
+                "unit_price": 541.0,
+                "amount": 64920.0
+              },
+              {
+                "item_code": "BMP-CU-P15",
+                "description": "銅柱凸塊製程",
+                "quantity": 12000.0,
+                "unit_price": 37.9,
+                "amount": 454800.0
+              }
+            ],
+            "total_amount": 652685.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_014.png",
+          "difficulty": "stamp",
+          "ok": 16,
+          "total": 21,
+          "errors": [
+            "po_number: P026054020 ≠ PO26054020",
+            "lines[0].unit_price: 25339.0 ≠ 253.39",
+            "lines[1].item_code: WB-CUIO-SOI ≠ WB-CU10-S01",
+            "lines[3].item_code: S-P-1210-M02 ≠ SIP-1210-M02",
+            "lines[3].unit_price: 1031.0 ≠ 103.17"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "鼎峰電子股份有限公司",
+            "po_number": "P026054020",
+            "order_date": "2026-05-17",
+            "delivery_date": "2026-06-21",
+            "lines": [
+              {
+                "item_code": "FCBGA-4545-B08",
+                "description": "覆球柵陣列封裝45ㄨ45mm",
+                "quantity": 100.0,
+                "unit_price": 25339.0,
+                "amount": 25339.0
+              },
+              {
+                "item_code": "WB-CUIO-SOI",
+                "description": "銅線打線封裝1.0mil",
+                "quantity": 10000.0,
+                "unit_price": 9.5,
+                "amount": 95000.0
+              },
+              {
+                "item_code": "CP-WT12-T01",
+                "description": "晶圓針測12吋",
+                "quantity": 300.0,
+                "unit_price": 1383.15,
+                "amount": 414945.0
+              },
+              {
+                "item_code": "S-P-1210-M02",
+                "description": "系統級封裝模組12x10mm",
+                "quantity": 300.0,
+                "unit_price": 1031.0,
+                "amount": 30951.0
+              }
+            ],
+            "total_amount": 566235.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_015.png",
+          "difficulty": "noisy",
+          "ok": 6,
+          "total": 9,
+          "errors": [
+            "po_number: P026065742 ≠ PO26065742",
+            "lines[0].item_code: WB-CUIO-SOI ≠ WB-CU10-S01",
+            "lines[0].unit_price: 8.9 ≠ 8.93"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "旭光積體電路股份有限公司",
+            "po_number": "P026065742",
+            "order_date": "2026-06-05",
+            "delivery_date": "2026-06-30",
+            "lines": [
+              {
+                "item_code": "WB-CUIO-SOI",
+                "description": "銅線打線封裝l.omil",
+                "quantity": 12000.0,
+                "unit_price": 8.9,
+                "amount": 107160.0
+              }
+            ],
+            "total_amount": 107160.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_016.png",
+          "difficulty": "hard",
+          "ok": 6,
+          "total": 9,
+          "errors": [
+            "po_number: P026019462 ≠ PO26019462",
+            "lines[0].item_code: QFN-080818 ≠ QFN-0808-C18",
+            "lines[0].amount: 51320.0 ≠ 61320.0"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "晶元通訊有限公司",
+            "po_number": "P026019462",
+            "order_date": "2026-01-18",
+            "delivery_date": "2026-02-09",
+            "lines": [
+              {
+                "item_code": "QFN-080818",
+                "description": "四方平面無引封褧8x8mm",
+                "quantity": 12000.0,
+                "unit_price": 5.11,
+                "amount": 51320.0
+              }
+            ],
+            "total_amount": 61320.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_017.png",
+          "difficulty": "clean",
+          "ok": 8,
+          "total": 9,
+          "errors": [
+            "po_number: P026053889 ≠ PO26053889"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "晶元通訊有限公司",
+            "po_number": "P026053889",
+            "order_date": "2026-05-15",
+            "delivery_date": "2026-06-19",
+            "lines": [
+              {
+                "item_code": "QFN-0505-C10",
+                "description": "四方平面引腳封裝5x5mm",
+                "quantity": 2500.0,
+                "unit_price": 3.59,
+                "amount": 8975.0
+              }
+            ],
+            "total_amount": 8975.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_018.png",
+          "difficulty": "stamp",
+          "ok": 17,
+          "total": 21,
+          "errors": [
+            "po_number: P026039137 ≠ PO26039137",
+            "lines[0].item_code: S-P-1210-M02 ≠ SIP-1210-M02",
+            "lines[2].item_code: WB-CUIO-SOI ≠ WB-CU10-S01",
+            "lines[3].unit_price: 51.0 ≠ 5.18"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "旭光積體電路股份有限公司",
+            "po_number": "P026039137",
+            "order_date": "2026-03-06",
+            "delivery_date": "2026-04-05",
+            "lines": [
+              {
+                "item_code": "S-P-1210-M02",
+                "description": "系統級封裝模組12x10mm",
+                "quantity": 120.0,
+                "unit_price": 90.65,
+                "amount": 10878.0
+              },
+              {
+                "item_code": "FT-LG-T08",
+                "description": "成品最終測試邏輯℃",
+                "quantity": 12000.0,
+                "unit_price": 1.8,
+                "amount": 21600.0
+              },
+              {
+                "item_code": "WB-CUIO-SOI",
+                "description": "銅線打線封裝1.0mil",
+                "quantity": 500.0,
+                "unit_price": 8.97,
+                "amount": 4485.0
+              },
+              {
+                "item_code": "QFN-0808-C18",
+                "description": "四方平面引腳封裝8x8mm",
+                "quantity": 5000.0,
+                "unit_price": 51.0,
+                "amount": 25900.0
+              }
+            ],
+            "total_amount": 62863.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_019.png",
+          "difficulty": "noisy",
+          "ok": 18,
+          "total": 25,
+          "errors": [
+            "po_number: P026014336 ≠ PO26014336",
+            "lines[0].item_code: S-p-1210-M02 ≠ SIP-1210-M02",
+            "lines[1].item_code: cp-WT12-T01 ≠ CP-WT12-T01",
+            "lines[2].item_code: WB-AU08-s05 ≠ WB-AU08-S05",
+            "lines[3].item_code: WB-CUIO-SOI ≠ WB-CU10-S01",
+            "lines[3].unit_price: 842.0 ≠ 8.12",
+            "lines[3].amount: 7440.0 ≠ 97440.0"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "旭光積體電路股份有限公司",
+            "po_number": "P026014336",
+            "order_date": "2026-01-29",
+            "delivery_date": "2026-03-04",
+            "lines": [
+              {
+                "item_code": "S-p-1210-M02",
+                "description": "糸統級封裝模組12ㄨ10mm",
+                "quantity": 300.0,
+                "unit_price": 97.0,
+                "amount": 29100.0
+              },
+              {
+                "item_code": "cp-WT12-T01",
+                "description": "晶圓針側12时",
+                "quantity": 200.0,
+                "unit_price": 1361.61,
+                "amount": 272322.0
+              },
+              {
+                "item_code": "WB-AU08-s05",
+                "description": "金線打線封裝0.8m",
+                "quantity": 10000.0,
+                "unit_price": 13.19,
+                "amount": 131900.0
+              },
+              {
+                "item_code": "WB-CUIO-SOI",
+                "description": "銅線打線封裝1.0mⅡ",
+                "quantity": 12000.0,
+                "unit_price": 842.0,
+                "amount": 7440.0
+              },
+              {
+                "item_code": "QFN-0505-C10",
+                "description": "四方平面無引腳封裝5x5mm",
+                "quantity": 500.0,
+                "unit_price": 3.46,
+                "amount": 1730.0
+              }
+            ],
+            "total_amount": 532492.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_020.png",
+          "difficulty": "hard",
+          "ok": 16,
+          "total": 25,
+          "errors": [
+            "customer_name: 旭光櫝體電路股份有限公司 ≠ 旭光積體電路股份有限公司",
+            "po_number: P026073400 ≠ PO26073400",
+            "order_date: 2026p/17 ≠ 2026-07-17",
+            "lines[0].item_code: F-BGA-4545-808 ≠ FCBGA-4545-B08",
+            "lines[1].item_code: QN-0808--18 ≠ QFN-0808-C18",
+            "lines[1].amount: 800.0 ≠ 64800.0",
+            "lines[3].item_code: FCBGA-353S-A01 ≠ FCBGA-3535-A01",
+            "lines[4].item_code: WT12-T01 ≠ CP-WT12-T01",
+            "lines[4].amount: 17086.0 ≠ 170046.0"
+          ],
+          "status": "未檢查",
+          "fixes": [],
+          "issues": [],
+          "order": {
+            "customer_name": "旭光櫝體電路股份有限公司",
+            "po_number": "P026073400",
+            "order_date": "2026p/17",
+            "delivery_date": "2026-07-26",
+            "lines": [
+              {
+                "item_code": "F-BGA-4545-808",
+                "description": "晶列封褧45x45EE",
+                "quantity": 200.0,
+                "unit_price": 251.06,
+                "amount": 50212.0
+              },
+              {
+                "item_code": "QN-0808--18",
+                "description": "四方平面無引封褧8x8mm",
+                "quantity": 12000.0,
+                "unit_price": 5.4,
+                "amount": 800.0
+              },
+              {
+                "item_code": "FT-LG-T08",
+                "description": "成品最終試",
+                "quantity": 2000.0,
+                "unit_price": 1.85,
+                "amount": 3700.0
+              },
+              {
+                "item_code": "FCBGA-353S-A01",
+                "description": "晶列装35乂35mm",
+                "quantity": 120.0,
+                "unit_price": 169.03,
+                "amount": 20283.6
+              },
+              {
+                "item_code": "WT12-T01",
+                "description": "晶針測12吋",
+                "quantity": 120.0,
+                "unit_price": 1417.05,
+                "amount": 17086.0
+              }
+            ],
+            "total_amount": 309041.6,
+            "uncertain_fields": []
+          }
+        }
+      ]
+    },
+    {
+      "name": "③ ＋主檔比對與交叉驗證",
+      "mode": "pipeline",
+      "field_accuracy": 0.9631578947368421,
+      "doc_accuracy": 0.7,
+      "auto_release": 14,
+      "auto_release_correct": 14,
+      "api_calls": 0,
+      "seconds": 5.1,
+      "docs": [
+        {
+          "file": "order_001.png",
+          "difficulty": "clean",
+          "ok": 17,
+          "total": 17,
+          "errors": [],
+          "status": "自動放行",
+          "fixes": [
+            "po_number：P026024582 → PO26024582（易混淆字元校正）",
+            "lines[0].unit_price：535.0 → 5.35（由金額 ÷ 數量回推，符合標準價）",
+            "lines[2].unit_price：333.0 → 3.33（由金額 ÷ 數量回推，符合標準價）"
+          ],
+          "issues": [],
+          "order": {
+            "customer_name": "旭光積體電路股份有限公司",
+            "po_number": "PO26024582",
+            "order_date": "2026-02-02",
+            "delivery_date": "2026-02-10",
+            "lines": [
+              {
+                "item_code": "QFN-0808-C18",
+                "description": "四方平面無引腳封裝 8x8mm",
+                "quantity": 1000.0,
+                "unit_price": 5.35,
+                "amount": 5350.0
+              },
+              {
+                "item_code": "BMP-CU-P15",
+                "description": "銅柱凸塊製程",
+                "quantity": 1000.0,
+                "unit_price": 38.55,
+                "amount": 38550.0
+              },
+              {
+                "item_code": "QFN-0505-C10",
+                "description": "四方平面無引腳封裝 5x5mm",
+                "quantity": 500.0,
+                "unit_price": 3.33,
+                "amount": 1665.0
+              }
+            ],
+            "total_amount": 45565.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_002.png",
+          "difficulty": "stamp",
+          "ok": 25,
+          "total": 25,
+          "errors": [],
+          "status": "自動放行",
+          "fixes": [
+            "po_number：P026066514 → PO26066514（易混淆字元校正）",
+            "lines[2].item_code：S-P-1210-M02 → SIP-1210-M02（模糊比對＋單價佐證）",
+            "lines[0].unit_price：546.0 → 5.46（由金額 ÷ 數量回推，符合標準價）"
+          ],
+          "issues": [],
+          "order": {
+            "customer_name": "鼎峰電子股份有限公司",
+            "po_number": "PO26066514",
+            "order_date": "2026-06-08",
+            "delivery_date": "2026-06-16",
+            "lines": [
+              {
+                "item_code": "QFN-0808-C18",
+                "description": "四方平面無引腳封裝 8x8mm",
+                "quantity": 5000.0,
+                "unit_price": 5.46,
+                "amount": 27300.0
+              },
+              {
+                "item_code": "FT-LG-T08",
+                "description": "成品最終測試 邏輯IC",
+                "quantity": 500.0,
+                "unit_price": 1.93,
+                "amount": 965.0
+              },
+              {
+                "item_code": "SIP-1210-M02",
+                "description": "系統級封裝模組 12x10mm",
+                "quantity": 100.0,
+                "unit_price": 99.04,
+                "amount": 9904.0
+              },
+              {
+                "item_code": "FCBGA-4545-B08",
+                "description": "覆晶球柵陣列封裝 45x45mm",
+                "quantity": 120.0,
+                "unit_price": 255.58,
+                "amount": 30669.6
+              },
+              {
+                "item_code": "BMP-CU-P15",
+                "description": "銅柱凸塊製程",
+                "quantity": 2500.0,
+                "unit_price": 40.78,
+                "amount": 101950.0
+              }
+            ],
+            "total_amount": 170788.6,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_003.png",
+          "difficulty": "noisy",
+          "ok": 25,
+          "total": 25,
+          "errors": [],
+          "status": "自動放行",
+          "fixes": [
+            "po_number：P026044733 → PO26044733（易混淆字元校正）",
+            "lines[0].item_code：WB-AU08-s05 → WB-AU08-S05（易混淆字元校正）",
+            "lines[1].item_code：FCBGA-3535-AOI → FCBGA-3535-A01（易混淆字元校正）",
+            "lines[2].item_code：CP-WT12-TOI → CP-WT12-T01（易混淆字元校正）"
+          ],
+          "issues": [],
+          "order": {
+            "customer_name": "宏晶半導體股份有限公司",
+            "po_number": "PO26044733",
+            "order_date": "2026-04-06",
+            "delivery_date": "2026-05-05",
+            "lines": [
+              {
+                "item_code": "WB-AU08-S05",
+                "description": "金線打線封裝 0.8mil",
+                "quantity": 12000.0,
+                "unit_price": 11.66,
+                "amount": 139920.0
+              },
+              {
+                "item_code": "FCBGA-3535-A01",
+                "description": "覆晶球柵陣列封裝 35x35mm",
+                "quantity": 120.0,
+                "unit_price": 191.59,
+                "amount": 22990.8
+              },
+              {
+                "item_code": "CP-WT12-T01",
+                "description": "晶圓針測 12吋",
+                "quantity": 300.0,
+                "unit_price": 1539.42,
+                "amount": 461826.0
+              },
+              {
+                "item_code": "BMP-CU-P15",
+                "description": "銅柱凸塊製程",
+                "quantity": 10000.0,
+                "unit_price": 38.47,
+                "amount": 384700.0
+              },
+              {
+                "item_code": "FT-LG-T08",
+                "description": "成品最終測試 邏輯IC",
+                "quantity": 1000.0,
+                "unit_price": 1.72,
+                "amount": 1720.0
+              }
+            ],
+            "total_amount": 1011156.8,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_004.png",
+          "difficulty": "hard",
+          "ok": 15,
+          "total": 17,
+          "errors": [
+            "customer_name: 旭光體電股份有限公司 ≠ 旭光積體電路股份有限公司",
+            "delivery_date: 115//27 ≠ 2026-04-27"
+          ],
+          "status": "待人工確認",
+          "fixes": [
+            "po_number：P026032914 → PO26032914（易混淆字元校正）",
+            "lines[1].item_code：QFN-0505--10 → QFN-0505-C10（模糊比對＋單價佐證）",
+            "lines[2].item_code：P-W-12-T01 → CP-WT12-T01（模糊比對＋單價佐證）",
+            "lines[2].unit_price：149130.0 → 1491.3（由金額 ÷ 數量回推，符合標準價）",
+            "total_amount：67,230.00 → 617,230.00（明細皆通過檢查，以明細加總為準）"
+          ],
+          "issues": [
+            {
+              "field": "customer_name",
+              "message": "客戶「旭光體電股份有限公司」不在客戶主檔，最接近：旭光積體電路股份有限公司",
+              "level": "error"
+            },
+            {
+              "field": "delivery_date",
+              "message": "交期格式錯誤：115//27",
+              "level": "error"
+            }
+          ],
+          "order": {
+            "customer_name": "旭光體電股份有限公司",
+            "po_number": "PO26032914",
+            "order_date": "2026-03-21",
+            "delivery_date": "115//27",
+            "lines": [
+              {
+                "item_code": "BMP-CU-P15",
+                "description": "銅柱凸塊製程",
+                "quantity": 10000.0,
+                "unit_price": 39.15,
+                "amount": 391500.0
+              },
+              {
+                "item_code": "QFN-0505-C10",
+                "description": "四方平面無引腳封裝 5x5mm",
+                "quantity": 20000.0,
+                "unit_price": 3.83,
+                "amount": 76600.0
+              },
+              {
+                "item_code": "CP-WT12-T01",
+                "description": "晶圓針測 12吋",
+                "quantity": 100.0,
+                "unit_price": 1491.3,
+                "amount": 149130.0
+              }
+            ],
+            "total_amount": 617230.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_005.png",
+          "difficulty": "clean",
+          "ok": 13,
+          "total": 13,
+          "errors": [],
+          "status": "自動放行",
+          "fixes": [
+            "po_number：P026013525 → PO26013525（易混淆字元校正）"
+          ],
+          "issues": [],
+          "order": {
+            "customer_name": "旭光積體電路股份有限公司",
+            "po_number": "PO26013525",
+            "order_date": "2026-01-27",
+            "delivery_date": "2026-03-06",
+            "lines": [
+              {
+                "item_code": "FCBGA-3535-A01",
+                "description": "覆晶球柵陣列封裝 35x35mm",
+                "quantity": 50.0,
+                "unit_price": 173.21,
+                "amount": 8660.5
+              },
+              {
+                "item_code": "QFN-0808-C18",
+                "description": "四方平面無引腳封裝 8x8mm",
+                "quantity": 10000.0,
+                "unit_price": 5.08,
+                "amount": 50800.0
+              }
+            ],
+            "total_amount": 59460.5,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_006.png",
+          "difficulty": "stamp",
+          "ok": 25,
+          "total": 25,
+          "errors": [],
+          "status": "自動放行",
+          "fixes": [
+            "po_number：P026088253 → PO26088253（易混淆字元校正）",
+            "lines[4].unit_price：27319.0 → 273.19（由金額 ÷ 數量回推，符合標準價）",
+            "lines[1].amount：18311040.0 → 183110.4（由數量 × 單價重算，並與合計交叉驗證）"
+          ],
+          "issues": [],
+          "order": {
+            "customer_name": "聯創微電子股份有限公司",
+            "po_number": "PO26088253",
+            "order_date": "2026-08-25",
+            "delivery_date": "2026-09-02",
+            "lines": [
+              {
+                "item_code": "QFN-0505-C10",
+                "description": "四方平面無引腳封裝 5x5mm",
+                "quantity": 10000.0,
+                "unit_price": 3.87,
+                "amount": 38700.0
+              },
+              {
+                "item_code": "CP-WT12-T01",
+                "description": "晶圓針測 12吋",
+                "quantity": 120.0,
+                "unit_price": 1525.92,
+                "amount": 183110.4
+              },
+              {
+                "item_code": "QFN-0808-C18",
+                "description": "四方平面無引腳封裝 8x8mm",
+                "quantity": 2500.0,
+                "unit_price": 5.54,
+                "amount": 13850.0
+              },
+              {
+                "item_code": "BMP-CU-P15",
+                "description": "銅柱凸塊製程",
+                "quantity": 2000.0,
+                "unit_price": 35.99,
+                "amount": 71980.0
+              },
+              {
+                "item_code": "FCBGA-4545-B08",
+                "description": "覆晶球柵陣列封裝 45x45mm",
+                "quantity": 500.0,
+                "unit_price": 273.19,
+                "amount": 136595.0
+              }
+            ],
+            "total_amount": 444235.4,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_007.png",
+          "difficulty": "noisy",
+          "ok": 13,
+          "total": 13,
+          "errors": [],
+          "status": "自動放行",
+          "fixes": [
+            "po_number：P026064694 → PO26064694（易混淆字元校正）"
+          ],
+          "issues": [],
+          "order": {
+            "customer_name": "鼎峰電子股份有限公司",
+            "po_number": "PO26064694",
+            "order_date": "2026-06-08",
+            "delivery_date": "2026-07-23",
+            "lines": [
+              {
+                "item_code": "FCBGA-3535-A01",
+                "description": "覆晶球柵陣列封裝 35x35mm",
+                "quantity": 120.0,
+                "unit_price": 192.28,
+                "amount": 23073.6
+              },
+              {
+                "item_code": "WB-AU08-S05",
+                "description": "金線打線封裝 0.8mil",
+                "quantity": 2500.0,
+                "unit_price": 13.06,
+                "amount": 32650.0
+              }
+            ],
+            "total_amount": 55723.6,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_008.png",
+          "difficulty": "hard",
+          "ok": 16,
+          "total": 17,
+          "errors": [
+            "customer_name: 鼎蜂電子股份有限公司 ≠ 鼎峰電子股份有限公司"
+          ],
+          "status": "待人工確認",
+          "fixes": [
+            "po_number：P026044525 → PO26044525（易混淆字元校正）",
+            "lines[2].item_code：F-BGA-4545-808 → FCBGA-4545-B08（模糊比對＋單價佐證）",
+            "lines[2].unit_price：28230.0 → 282.3（由金額 ÷ 數量回推，符合標準價）",
+            "total_amount：157,200.80 → 157,200.00（明細皆通過檢查，以明細加總為準）"
+          ],
+          "issues": [
+            {
+              "field": "customer_name",
+              "message": "客戶「鼎蜂電子股份有限公司」不在客戶主檔，最接近：鼎峰電子股份有限公司",
+              "level": "error"
+            }
+          ],
+          "order": {
+            "customer_name": "鼎蜂電子股份有限公司",
+            "po_number": "PO26044525",
+            "order_date": "2026-04-09",
+            "delivery_date": "2026-05-12",
+            "lines": [
+              {
+                "item_code": "BMP-CU-P15",
+                "description": "銅柱凸塊製程",
+                "quantity": 2500.0,
+                "unit_price": 35.85,
+                "amount": 89625.0
+              },
+              {
+                "item_code": "FCBGA-3535-A01",
+                "description": "覆晶球柵陣列封裝 35x35mm",
+                "quantity": 300.0,
+                "unit_price": 178.2,
+                "amount": 53460.0
+              },
+              {
+                "item_code": "FCBGA-4545-B08",
+                "description": "覆晶球柵陣列封裝 45x45mm",
+                "quantity": 50.0,
+                "unit_price": 282.3,
+                "amount": 14115.0
+              }
+            ],
+            "total_amount": 157200.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_009.png",
+          "difficulty": "clean",
+          "ok": 17,
+          "total": 17,
+          "errors": [],
+          "status": "自動放行",
+          "fixes": [
+            "po_number：P026081910 → PO26081910（易混淆字元校正）",
+            "lines[0].item_code：S-P-1210-M02 → SIP-1210-M02（模糊比對＋單價佐證）",
+            "lines[2].item_code：WB-CUIO-SOI → WB-CU10-S01（易混淆字元校正）",
+            "lines[0].unit_price：10042.0 → 100.42（由金額 ÷ 數量回推，符合標準價）",
+            "lines[1].unit_price：24435.0 → 244.35（由金額 ÷ 數量回推，符合標準價）"
+          ],
+          "issues": [],
+          "order": {
+            "customer_name": "宏晶半導體股份有限公司",
+            "po_number": "PO26081910",
+            "order_date": "2026-08-10",
+            "delivery_date": "2026-08-22",
+            "lines": [
+              {
+                "item_code": "SIP-1210-M02",
+                "description": "系統級封裝模組 12x10mm",
+                "quantity": 300.0,
+                "unit_price": 100.42,
+                "amount": 30126.0
+              },
+              {
+                "item_code": "FCBGA-4545-B08",
+                "description": "覆晶球柵陣列封裝 45x45mm",
+                "quantity": 500.0,
+                "unit_price": 244.35,
+                "amount": 122175.0
+              },
+              {
+                "item_code": "WB-CU10-S01",
+                "description": "銅線打線封裝 1.0mil",
+                "quantity": 500.0,
+                "unit_price": 8.2,
+                "amount": 4100.0
+              }
+            ],
+            "total_amount": 156401.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_010.png",
+          "difficulty": "stamp",
+          "ok": 25,
+          "total": 25,
+          "errors": [],
+          "status": "自動放行",
+          "fixes": [
+            "po_number：P026025526 → PO26025526（易混淆字元校正）",
+            "lines[0].item_code：WB-CUIO-SOI → WB-CU10-S01（易混淆字元校正）",
+            "lines[2].item_code：S-P-1210-M02 → SIP-1210-M02（模糊比對＋單價佐證）",
+            "lines[3].unit_price：0.0 → 5.47（由金額 ÷ 數量回推，符合標準價）",
+            "lines[4].unit_price：3833.0 → 38.33（由金額 ÷ 數量回推，符合標準價）"
+          ],
+          "issues": [],
+          "order": {
+            "customer_name": "晶元通訊有限公司",
+            "po_number": "PO26025526",
+            "order_date": "2026-02-27",
+            "delivery_date": "2026-04-08",
+            "lines": [
+              {
+                "item_code": "WB-CU10-S01",
+                "description": "銅線打線封裝 1.0mil",
+                "quantity": 2500.0,
+                "unit_price": 8.98,
+                "amount": 22450.0
+              },
+              {
+                "item_code": "WB-AU08-S05",
+                "description": "金線打線封裝 0.8mil",
+                "quantity": 20000.0,
+                "unit_price": 12.07,
+                "amount": 241400.0
+              },
+              {
+                "item_code": "SIP-1210-M02",
+                "description": "系統級封裝模組 12x10mm",
+                "quantity": 200.0,
+                "unit_price": 99.89,
+                "amount": 19978.0
+              },
+              {
+                "item_code": "QFN-0808-C18",
+                "description": "四方平面無引腳封裝 8x8mm",
+                "quantity": 2500.0,
+                "unit_price": 5.47,
+                "amount": 13675.0
+              },
+              {
+                "item_code": "BMP-CU-P15",
+                "description": "銅柱凸塊製程",
+                "quantity": 500.0,
+                "unit_price": 38.33,
+                "amount": 19165.0
+              }
+            ],
+            "total_amount": 316668.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_011.png",
+          "difficulty": "noisy",
+          "ok": 23,
+          "total": 25,
+          "errors": [
+            "lines[2].unit_price: 28334.0 ≠ 283.34",
+            "lines[2].amount: 283300.0 ≠ 28334.0"
+          ],
+          "status": "待人工確認",
+          "fixes": [
+            "po_number：P026052110 → PO26052110（易混淆字元校正）",
+            "lines[0].item_code：S-P-1210-M02 → SIP-1210-M02（模糊比對＋單價佐證）",
+            "lines[1].item_code：CP--12-T01 → CP-WT12-T01（模糊比對＋單價佐證）"
+          ],
+          "issues": [
+            {
+              "field": "lines[2].unit_price",
+              "message": "單價 28334.0 與標準價 265.0 差異超過 30%",
+              "level": "warning"
+            },
+            {
+              "field": "lines[2].amount",
+              "message": "數量 × 單價（100.0 × 28334.0）≠ 金額 283300.0",
+              "level": "error"
+            },
+            {
+              "field": "total_amount",
+              "message": "明細金額加總 430,732.00 ≠ 合計 175,766.00",
+              "level": "error"
+            }
+          ],
+          "order": {
+            "customer_name": "鼎峰電子股份有限公司",
+            "po_number": "PO26052110",
+            "order_date": "2026-05-20",
+            "delivery_date": "2026-06-16",
+            "lines": [
+              {
+                "item_code": "SIP-1210-M02",
+                "description": "系統級封裝模組 12x10mm",
+                "quantity": 100.0,
+                "unit_price": 90.0,
+                "amount": 9000.0
+              },
+              {
+                "item_code": "CP-WT12-T01",
+                "description": "晶圓針測 12吋",
+                "quantity": 50.0,
+                "unit_price": 1415.24,
+                "amount": 70762.0
+              },
+              {
+                "item_code": "FCBGA-4545-B08",
+                "description": "覆晶球柵陣列封裝 45x45mm",
+                "quantity": 100.0,
+                "unit_price": 28334.0,
+                "amount": 283300.0
+              },
+              {
+                "item_code": "WB-AU08-S05",
+                "description": "金線打線封裝 0.8mil",
+                "quantity": 5000.0,
+                "unit_price": 12.81,
+                "amount": 64050.0
+              },
+              {
+                "item_code": "FT-LG-T08",
+                "description": "成品最終測試 邏輯IC",
+                "quantity": 2000.0,
+                "unit_price": 1.81,
+                "amount": 3620.0
+              }
+            ],
+            "total_amount": 175766.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_012.png",
+          "difficulty": "hard",
+          "ok": 18,
+          "total": 21,
+          "errors": [
+            "customer_name: 旭光櫝體電路股份有限公司 ≠ 旭光積體電路股份有限公司",
+            "lines[1].amount: 266200.0 ≠ 26628.0",
+            "lines[2].quantity: 2.58 ≠ 2500"
+          ],
+          "status": "待人工確認",
+          "fixes": [
+            "po_number：P026086551 → PO26086551（易混淆字元校正）",
+            "lines[0].item_code：WB-CU10-s01 → WB-CU10-S01（易混淆字元校正）",
+            "lines[1].item_code：FCBGA-454508 → FCBGA-4545-B08（模糊比對＋單價佐證）",
+            "lines[3].item_code：S-P4210-M02 → SIP-1210-M02（模糊比對＋單價佐證）",
+            "lines[3].unit_price：10138.0 → 101.38（由金額 ÷ 數量回推，符合標準價）"
+          ],
+          "issues": [
+            {
+              "field": "customer_name",
+              "message": "客戶「旭光櫝體電路股份有限公司」不在客戶主檔，最接近：旭光積體電路股份有限公司",
+              "level": "error"
+            },
+            {
+              "field": "lines[1].amount",
+              "message": "數量 × 單價（100.0 × 266.28）≠ 金額 266200.0",
+              "level": "error"
+            },
+            {
+              "field": "lines[2].quantity",
+              "message": "數量異常：2.58",
+              "level": "error"
+            },
+            {
+              "field": "lines[2].amount",
+              "message": "數量 × 單價（2.58 × 1.94）≠ 金額 4850.0",
+              "level": "error"
+            },
+            {
+              "field": "total_amount",
+              "message": "明細金額加總 280,714.00 ≠ 合計 41,142.00",
+              "level": "error"
+            }
+          ],
+          "order": {
+            "customer_name": "旭光櫝體電路股份有限公司",
+            "po_number": "PO26086551",
+            "order_date": "2026-08-15",
+            "delivery_date": "2026-09-25",
+            "lines": [
+              {
+                "item_code": "WB-CU10-S01",
+                "description": "銅線打線封裝 1.0mil",
+                "quantity": 500.0,
+                "unit_price": 9.19,
+                "amount": 4595.0
+              },
+              {
+                "item_code": "FCBGA-4545-B08",
+                "description": "覆晶球柵陣列封裝 45x45mm",
+                "quantity": 100.0,
+                "unit_price": 266.28,
+                "amount": 266200.0
+              },
+              {
+                "item_code": "FT-LG-T08",
+                "description": "成品最終測試 邏輯IC",
+                "quantity": 2.58,
+                "unit_price": 1.94,
+                "amount": 4850.0
+              },
+              {
+                "item_code": "SIP-1210-M02",
+                "description": "系統級封裝模組 12x10mm",
+                "quantity": 50.0,
+                "unit_price": 101.38,
+                "amount": 5069.0
+              }
+            ],
+            "total_amount": 41142.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_013.png",
+          "difficulty": "clean",
+          "ok": 21,
+          "total": 21,
+          "errors": [],
+          "status": "自動放行",
+          "fixes": [
+            "po_number：P026076954 → PO26076954（易混淆字元校正）",
+            "lines[2].unit_price：541.0 → 5.41（由金額 ÷ 數量回推，符合標準價）"
+          ],
+          "issues": [],
+          "order": {
+            "customer_name": "宏晶半導體股份有限公司",
+            "po_number": "PO26076954",
+            "order_date": "2026-07-16",
+            "delivery_date": "2026-07-26",
+            "lines": [
+              {
+                "item_code": "FCBGA-3535-A01",
+                "description": "覆晶球柵陣列封裝 35x35mm",
+                "quantity": 500.0,
+                "unit_price": 195.13,
+                "amount": 97565.0
+              },
+              {
+                "item_code": "FT-LG-T08",
+                "description": "成品最終測試 邏輯IC",
+                "quantity": 20000.0,
+                "unit_price": 1.77,
+                "amount": 35400.0
+              },
+              {
+                "item_code": "QFN-0808-C18",
+                "description": "四方平面無引腳封裝 8x8mm",
+                "quantity": 12000.0,
+                "unit_price": 5.41,
+                "amount": 64920.0
+              },
+              {
+                "item_code": "BMP-CU-P15",
+                "description": "銅柱凸塊製程",
+                "quantity": 12000.0,
+                "unit_price": 37.9,
+                "amount": 454800.0
+              }
+            ],
+            "total_amount": 652685.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_014.png",
+          "difficulty": "stamp",
+          "ok": 21,
+          "total": 21,
+          "errors": [],
+          "status": "自動放行",
+          "fixes": [
+            "po_number：P026054020 → PO26054020（易混淆字元校正）",
+            "lines[1].item_code：WB-CUIO-SOI → WB-CU10-S01（易混淆字元校正）",
+            "lines[3].item_code：S-P-1210-M02 → SIP-1210-M02（模糊比對＋單價佐證）",
+            "lines[0].unit_price：25339.0 → 253.39（由金額 ÷ 數量回推，符合標準價）",
+            "lines[3].unit_price：1031.0 → 103.17（由金額 ÷ 數量回推，符合標準價）"
+          ],
+          "issues": [],
+          "order": {
+            "customer_name": "鼎峰電子股份有限公司",
+            "po_number": "PO26054020",
+            "order_date": "2026-05-17",
+            "delivery_date": "2026-06-21",
+            "lines": [
+              {
+                "item_code": "FCBGA-4545-B08",
+                "description": "覆晶球柵陣列封裝 45x45mm",
+                "quantity": 100.0,
+                "unit_price": 253.39,
+                "amount": 25339.0
+              },
+              {
+                "item_code": "WB-CU10-S01",
+                "description": "銅線打線封裝 1.0mil",
+                "quantity": 10000.0,
+                "unit_price": 9.5,
+                "amount": 95000.0
+              },
+              {
+                "item_code": "CP-WT12-T01",
+                "description": "晶圓針測 12吋",
+                "quantity": 300.0,
+                "unit_price": 1383.15,
+                "amount": 414945.0
+              },
+              {
+                "item_code": "SIP-1210-M02",
+                "description": "系統級封裝模組 12x10mm",
+                "quantity": 300.0,
+                "unit_price": 103.17,
+                "amount": 30951.0
+              }
+            ],
+            "total_amount": 566235.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_015.png",
+          "difficulty": "noisy",
+          "ok": 9,
+          "total": 9,
+          "errors": [],
+          "status": "自動放行",
+          "fixes": [
+            "po_number：P026065742 → PO26065742（易混淆字元校正）",
+            "lines[0].item_code：WB-CUIO-SOI → WB-CU10-S01（易混淆字元校正）",
+            "lines[0].unit_price：8.9 → 8.93（由金額 ÷ 數量回推，符合標準價，並與合計交叉驗證）"
+          ],
+          "issues": [],
+          "order": {
+            "customer_name": "旭光積體電路股份有限公司",
+            "po_number": "PO26065742",
+            "order_date": "2026-06-05",
+            "delivery_date": "2026-06-30",
+            "lines": [
+              {
+                "item_code": "WB-CU10-S01",
+                "description": "銅線打線封裝 1.0mil",
+                "quantity": 12000.0,
+                "unit_price": 8.93,
+                "amount": 107160.0
+              }
+            ],
+            "total_amount": 107160.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_016.png",
+          "difficulty": "hard",
+          "ok": 9,
+          "total": 9,
+          "errors": [],
+          "status": "自動放行",
+          "fixes": [
+            "po_number：P026019462 → PO26019462（易混淆字元校正）",
+            "lines[0].item_code：QFN-080818 → QFN-0808-C18（模糊比對＋單價佐證）",
+            "lines[0].amount：51320.0 → 61320.0（由數量 × 單價重算，並與合計交叉驗證）"
+          ],
+          "issues": [],
+          "order": {
+            "customer_name": "晶元通訊有限公司",
+            "po_number": "PO26019462",
+            "order_date": "2026-01-18",
+            "delivery_date": "2026-02-09",
+            "lines": [
+              {
+                "item_code": "QFN-0808-C18",
+                "description": "四方平面無引腳封裝 8x8mm",
+                "quantity": 12000.0,
+                "unit_price": 5.11,
+                "amount": 61320.0
+              }
+            ],
+            "total_amount": 61320.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_017.png",
+          "difficulty": "clean",
+          "ok": 9,
+          "total": 9,
+          "errors": [],
+          "status": "自動放行",
+          "fixes": [
+            "po_number：P026053889 → PO26053889（易混淆字元校正）"
+          ],
+          "issues": [],
+          "order": {
+            "customer_name": "晶元通訊有限公司",
+            "po_number": "PO26053889",
+            "order_date": "2026-05-15",
+            "delivery_date": "2026-06-19",
+            "lines": [
+              {
+                "item_code": "QFN-0505-C10",
+                "description": "四方平面無引腳封裝 5x5mm",
+                "quantity": 2500.0,
+                "unit_price": 3.59,
+                "amount": 8975.0
+              }
+            ],
+            "total_amount": 8975.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_018.png",
+          "difficulty": "stamp",
+          "ok": 21,
+          "total": 21,
+          "errors": [],
+          "status": "自動放行",
+          "fixes": [
+            "po_number：P026039137 → PO26039137（易混淆字元校正）",
+            "lines[0].item_code：S-P-1210-M02 → SIP-1210-M02（模糊比對＋單價佐證）",
+            "lines[2].item_code：WB-CUIO-SOI → WB-CU10-S01（易混淆字元校正）",
+            "lines[3].unit_price：51.0 → 5.18（由金額 ÷ 數量回推，符合標準價）"
+          ],
+          "issues": [],
+          "order": {
+            "customer_name": "旭光積體電路股份有限公司",
+            "po_number": "PO26039137",
+            "order_date": "2026-03-06",
+            "delivery_date": "2026-04-05",
+            "lines": [
+              {
+                "item_code": "SIP-1210-M02",
+                "description": "系統級封裝模組 12x10mm",
+                "quantity": 120.0,
+                "unit_price": 90.65,
+                "amount": 10878.0
+              },
+              {
+                "item_code": "FT-LG-T08",
+                "description": "成品最終測試 邏輯IC",
+                "quantity": 12000.0,
+                "unit_price": 1.8,
+                "amount": 21600.0
+              },
+              {
+                "item_code": "WB-CU10-S01",
+                "description": "銅線打線封裝 1.0mil",
+                "quantity": 500.0,
+                "unit_price": 8.97,
+                "amount": 4485.0
+              },
+              {
+                "item_code": "QFN-0808-C18",
+                "description": "四方平面無引腳封裝 8x8mm",
+                "quantity": 5000.0,
+                "unit_price": 5.18,
+                "amount": 25900.0
+              }
+            ],
+            "total_amount": 62863.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_019.png",
+          "difficulty": "noisy",
+          "ok": 23,
+          "total": 25,
+          "errors": [
+            "lines[3].unit_price: 842.0 ≠ 8.12",
+            "lines[3].amount: 7440.0 ≠ 97440.0"
+          ],
+          "status": "待人工確認",
+          "fixes": [
+            "po_number：P026014336 → PO26014336（易混淆字元校正）",
+            "lines[0].item_code：S-p-1210-M02 → SIP-1210-M02（模糊比對＋單價佐證）",
+            "lines[1].item_code：cp-WT12-T01 → CP-WT12-T01（易混淆字元校正）",
+            "lines[2].item_code：WB-AU08-s05 → WB-AU08-S05（易混淆字元校正）",
+            "lines[3].item_code：WB-CUIO-SOI → WB-CU10-S01（易混淆字元校正）"
+          ],
+          "issues": [
+            {
+              "field": "lines[3].unit_price",
+              "message": "單價 842.0 與標準價 8.8 差異超過 30%",
+              "level": "warning"
+            },
+            {
+              "field": "lines[3].amount",
+              "message": "數量 × 單價（12000.0 × 842.0）≠ 金額 7440.0",
+              "level": "error"
+            },
+            {
+              "field": "total_amount",
+              "message": "明細金額加總 442,492.00 ≠ 合計 532,492.00",
+              "level": "error"
+            }
+          ],
+          "order": {
+            "customer_name": "旭光積體電路股份有限公司",
+            "po_number": "PO26014336",
+            "order_date": "2026-01-29",
+            "delivery_date": "2026-03-04",
+            "lines": [
+              {
+                "item_code": "SIP-1210-M02",
+                "description": "系統級封裝模組 12x10mm",
+                "quantity": 300.0,
+                "unit_price": 97.0,
+                "amount": 29100.0
+              },
+              {
+                "item_code": "CP-WT12-T01",
+                "description": "晶圓針測 12吋",
+                "quantity": 200.0,
+                "unit_price": 1361.61,
+                "amount": 272322.0
+              },
+              {
+                "item_code": "WB-AU08-S05",
+                "description": "金線打線封裝 0.8mil",
+                "quantity": 10000.0,
+                "unit_price": 13.19,
+                "amount": 131900.0
+              },
+              {
+                "item_code": "WB-CU10-S01",
+                "description": "銅線打線封裝 1.0mil",
+                "quantity": 12000.0,
+                "unit_price": 842.0,
+                "amount": 7440.0
+              },
+              {
+                "item_code": "QFN-0505-C10",
+                "description": "四方平面無引腳封裝 5x5mm",
+                "quantity": 500.0,
+                "unit_price": 3.46,
+                "amount": 1730.0
+              }
+            ],
+            "total_amount": 532492.0,
+            "uncertain_fields": []
+          }
+        },
+        {
+          "file": "order_020.png",
+          "difficulty": "hard",
+          "ok": 21,
+          "total": 25,
+          "errors": [
+            "customer_name: 旭光櫝體電路股份有限公司 ≠ 旭光積體電路股份有限公司",
+            "order_date: 2026p/17 ≠ 2026-07-17",
+            "lines[1].amount: 800.0 ≠ 64800.0",
+            "lines[4].amount: 17086.0 ≠ 170046.0"
+          ],
+          "status": "待人工確認",
+          "fixes": [
+            "po_number：P026073400 → PO26073400（易混淆字元校正）",
+            "lines[0].item_code：F-BGA-4545-808 → FCBGA-4545-B08（模糊比對＋單價佐證）",
+            "lines[1].item_code：QN-0808--18 → QFN-0808-C18（模糊比對＋單價佐證）",
+            "lines[3].item_code：FCBGA-353S-A01 → FCBGA-3535-A01（易混淆字元校正）",
+            "lines[4].item_code：WT12-T01 → CP-WT12-T01（模糊比對＋單價佐證）"
+          ],
+          "issues": [
+            {
+              "field": "customer_name",
+              "message": "客戶「旭光櫝體電路股份有限公司」不在客戶主檔，最接近：旭光積體電路股份有限公司",
+              "level": "error"
+            },
+            {
+              "field": "order_date",
+              "message": "訂購日期格式錯誤：2026p/17",
+              "level": "error"
+            },
+            {
+              "field": "lines[1].amount",
+              "message": "數量 × 單價（12000.0 × 5.4）≠ 金額 800.0",
+              "level": "error"
+            },
+            {
+              "field": "lines[4].amount",
+              "message": "數量 × 單價（120.0 × 1417.05）≠ 金額 17086.0",
+              "level": "error"
+            },
+            {
+              "field": "total_amount",
+              "message": "明細金額加總 92,081.60 ≠ 合計 309,041.60",
+              "level": "error"
+            }
+          ],
+          "order": {
+            "customer_name": "旭光櫝體電路股份有限公司",
+            "po_number": "PO26073400",
+            "order_date": "2026p/17",
+            "delivery_date": "2026-07-26",
+            "lines": [
+              {
+                "item_code": "FCBGA-4545-B08",
+                "description": "覆晶球柵陣列封裝 45x45mm",
+                "quantity": 200.0,
+                "unit_price": 251.06,
+                "amount": 50212.0
+              },
+              {
+                "item_code": "QFN-0808-C18",
+                "description": "四方平面無引腳封裝 8x8mm",
+                "quantity": 12000.0,
+                "unit_price": 5.4,
+                "amount": 800.0
+              },
+              {
+                "item_code": "FT-LG-T08",
+                "description": "成品最終測試 邏輯IC",
+                "quantity": 2000.0,
+                "unit_price": 1.85,
+                "amount": 3700.0
+              },
+              {
+                "item_code": "FCBGA-3535-A01",
+                "description": "覆晶球柵陣列封裝 35x35mm",
+                "quantity": 120.0,
+                "unit_price": 169.03,
+                "amount": 20283.6
+              },
+              {
+                "item_code": "CP-WT12-T01",
+                "description": "晶圓針測 12吋",
+                "quantity": 120.0,
+                "unit_price": 1417.05,
+                "amount": 17086.0
+              }
+            ],
+            "total_amount": 309041.6,
+            "uncertain_fields": []
+          }
+        }
+      ]
+    }
+  ]
+}
