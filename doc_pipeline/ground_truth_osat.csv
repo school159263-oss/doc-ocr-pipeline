@@ -1,0 +1,25 @@
+﻿file,po_no,customer,customer_part_no,wafer_lot_id,wafer_size,package_type,die_count,unit_price,price_unit,delivery_date,variant,angle,blur_k,injected_error,expected_grade
+o01_electronic.pdf,PO-2026-3742,Globex Microdevices,OSAT-CHIP-9903,LOT-2026-C41,12-inch,CSP,13050,2180.0,per wafer,2027-01-06,electronic,0.0,0,,通過
+o02_electronic.pdf,PO-2026-1434,Globex Microdevices,OSAT-CHIP-9903,LOT-2026-C41,12-inch,BGA,27300,2180.0,per wafer,2027-02-19,electronic,0.0,0,,通過
+o03_electronic.pdf,PO-2026-4887,Contoso Chipworks,OSAT-CHIP-9909,LOT-2026-H19,12-inch,BGA,22800,3615.0,per wafer,2027-02-05,electronic,0.0,0,,通過
+o04_electronic.pdf,PO-2026-9463,ACME Semi,OSAT-CHIP-9901,LOT-2026-Z76,12-inch,BGA,7950,3250.0,per wafer,2026-12-17,electronic,0.0,0,lot_missing,需人工確認
+o05_scan.pdf,PO-2026-7740,ACME Semi,OSAT-CHIP-9902,LOT-2026-X88,12-inch,CSP,28000,85.5,per 1k units,2026-12-13,scan,0.63,3,,通過
+o06_scan.pdf,PO-2026-4622,ACME Semi,OSAT-CHIP-9902,LOT-2026-X88,12-inch,BGA,1550,92.0,per 1k units,2027-01-03,scan,0.7,3,price_mismatch,需人工確認
+o07_scan.pdf,PO-2026-5791,Umbrella Photonics,OSAT-CHIP-9908,LOT-2026-F35,8-inch,QFN,15550,94.2,per 1k units,2026-12-02,scan,-0.37,3,,通過
+o08_scan.pdf,PO-2026-8416,Globex Microdevice,OSAT-CHIP-9904,LOT-2026-B23,8-inch,QFN,7600,62.4,per 1k units,2027-01-02,scan,-0.51,3,customer_typo,需人工確認
+o09_scan.pdf,PO-2026-5965,ACME Semi,OSAT-CHIP-9902,LOT-2026-A17,12-inch,CSP,18150,85.5,per 1k units,2027-01-03,scan,-1.85,3,,通過
+o10_scan.pdf,PO-2026-1134,Contoso Chipworks,OSAT-CHIP-9970,LOT-2026-H19,12-inch,BGA,23050,71.8,per 1k units,2027-02-11,scan,-2.41,3,part_unknown,明顯錯誤
+o11_scan.pdf,PO-2026-6042,Contoso Chipworks,OSAT-CHIP-9993,LOT-2026-H19,12-inch,QFN,2750,71.8,per 1k units,2027-01-23,scan,1.52,3,part_unknown,明顯錯誤
+o12_scan.pdf,PO-2026-1209,Contoso Chipworks,OSAT-CHIP-9910,LOT-2026-H19,12-inch,CSP,2000,71.8,per 1k units,2026-12-25,scan,-2.22,3,,通過
+o13_scan.pdf,PO-2026-8341,ACME Semi,OSAT-CHIP-9902,LOT-2026-X88,12-inch,QFN,16200,79.0,per 1k units,2026-12-30,scan,4.25,3,price_mismatch,需人工確認
+o14_scan.pdf,PO-2026-4876,Contoso Chipworks,OSAT-CHIP-9910,LOT-2026-K47,8-inch,CSP,11400,71.8,per 1k units,2026-12-19,scan,4.93,3,,通過
+o15_scan.pdf,PO-2026-9608,Globex Microdevices,OSAT-CHIP-9903,LOT-2026-Z82,12-inch,BGA,17550,2180.0,per wafer,2026-12-02,scan,-4.85,3,lot_missing,需人工確認
+o16_scan.pdf,PO-2026-4981,Globex Microdevices,OSAT-CHIP-9903,LOT-2026-C41,12-inch,CSP,22950,2180.0,per wafer,2026-12-15,scan,4.17,3,,通過
+o17_scan.pdf,PO-2026-5781,Globex Microdevices,OSAT-CHIP-9904,LOT-2026-C41,12-inch,QFN,18750,62.4,per 1k units,2026-12-22,scan,-8.91,3,,通過
+o18_scan.pdf,PO-2026-8886,Initech Silicon,OSAT-CHIP-9906,LOT-2026-E64,12-inch,CSP,13350,125.25,per 1k units,2026-12-14,scan,-7.59,3,price_mismatch,需人工確認
+o19_scan.pdf,PO-2026-1734,Umbrella Photonics,OSAT-CHIP-9907,LOT-2026-Z33,8-inch,QFN,15550,2740.0,per wafer,2026-12-02,scan,-6.83,3,lot_missing,需人工確認
+o20_scan.pdf,PO-2026-7680,Initech Silico,OSAT-CHIP-9905,LOT-2026-E64,12-inch,QFN,17750,1960.0,per wafer,2026-12-10,scan,9.17,3,customer_typo,需人工確認
+o21_blur.pdf,PO-2026-4938,Globex Microdevices,OSAT-CHIP-9903,LOT-2026-B23,8-inch,BGA,23200,2180.0,per wafer,2026-12-25,blur,-0.9,5,,通過
+o22_blur.pdf,PO-2026-1399,Umbrella Photonics,OSAT-CHIP-9908,LOT-2026-G76,12-inch,BGA,5650,100.7,per 1k units,2026-12-15,blur,-0.8,9,price_mismatch,需人工確認
+o23_blur.pdf,PO-2026-2104,Contoso Chipworks,OSAT-CHIP-9909,LOT-2026-K47,8-inch,BGA,28850,3615.0,per wafer,2026-12-21,blur,-0.67,13,,通過
+o24_blur.pdf,PO-2026-7394,ACME Semi,OSAT-CHIP-9902,LOT-2026-Z21,12-inch,BGA,28900,85.5,per 1k units,2027-01-16,blur,0.37,17,lot_missing,需人工確認

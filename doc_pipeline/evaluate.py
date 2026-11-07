@@ -2,6 +2,7 @@
     python evaluate.py --extractor rules
     python evaluate.py --extractor llm
     python evaluate.py --extractor routed
+    python evaluate.py --doctype osat        # V2 封測客戶訂單(docs_osat/ + ground_truth_osat.csv)
 
 準備:
     docs/                放文件(pdf/png/jpg)
@@ -36,7 +37,16 @@ def main():
     ap.add_argument("--thresholds", default="0.80,0.85,0.90",
                     help="廠商相似度門檻的敏感度分析(逗號分隔)。主結果固定使用 validators.SIM_THRESHOLD")
     ap.add_argument("--out", default=None, help="結果檔路徑,預設 results_<extractor>.csv")
+    ap.add_argument("--doctype", default="invoice", choices=["invoice", "osat"],
+                    help="invoice = V1 供應商單據(預設,行為不變);osat = V2 封測客戶訂單")
     args = ap.parse_args()
+
+    if args.doctype == "osat":
+        from osat_eval import run
+        run(args.docs if args.docs != "docs" else "docs_osat",
+            args.truth if args.truth != "ground_truth.csv" else "ground_truth_osat.csv",
+            args.out or "results_osat.csv")
+        return
 
     extract = EXTRACTORS[args.extractor]
     truth_rows = list(csv.DictReader(open(args.truth, encoding="utf-8-sig")))

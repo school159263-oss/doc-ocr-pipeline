@@ -1,0 +1,43 @@
+# V1 baseline  2026-11-07 17:40  code = main 7976a4b (no V1 file modified)
+python 3.14.6 Windows-11-10.0.26200-SP0
+OCR engine actually used by extractors._ocr_image_pages: Tesseract (paddleocr not installed -> ImportError fallback) | lang=chi_tra+eng
+tesseract 5.5.3.20260724 | pdfplumber 0.11.10 | pillow 13.0.0
+tessdata: tessdata_fast (github.com/tesseract-ocr/tessdata_fast) chi_tra sha256 529c5b5797d64b12..., eng sha256 7d4322bd2a774972...
+
+## original 20 docs
+
+=== rules  共 20 份 ===
+欄位正確率 doc_no  : 90.0%
+欄位正確率 date    : 95.0%
+欄位正確率 vendor  : 80.0%
+欄位正確率 total   : 85.0%
+整份全對率           : 75.0%
+自動通過率           : 75.0%  (其餘 5 份送人工複核)
+自動通過者的正確率   : 100.0%  <- 最重要,漏網的錯誤有 0 份
+
+--- 廠商主資料比對(主資料 15 家;主門檻 0.85)---
+不含主資料比對:自動通過 16 份,其中正確 15 份 (93.8%)
+門檻  自動通過  通過者正確率  多攔下的錯誤  誤攔的正確文件
+0.80      15       100.0%            1              0
+0.85      15       100.0%            1              0
+0.90      15       100.0%            1              0
+明細已寫入 results_v1_baseline_docs.csv
+
+## holdout 20 docs
+
+=== rules  共 20 份 ===
+欄位正確率 doc_no  : 85.0%
+欄位正確率 date    : 90.0%
+欄位正確率 vendor  : 80.0%
+欄位正確率 total   : 70.0%
+整份全對率           : 55.0%
+自動通過率           : 55.0%  (其餘 9 份送人工複核)
+自動通過者的正確率   : 100.0%  <- 最重要,漏網的錯誤有 0 份
+
+--- 廠商主資料比對(主資料 15 家;主門檻 0.85)---
+不含主資料比對:自動通過 12 份,其中正確 11 份 (91.7%)
+門檻  自動通過  通過者正確率  多攔下的錯誤  誤攔的正確文件
+0.80      11       100.0%            1              0
+0.85      11       100.0%            1              0
+0.90      11       100.0%            1              0
+明細已寫入 results_v1_baseline_holdout.csv

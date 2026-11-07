@@ -1,0 +1,8 @@
+# V2（封測客戶訂單 + PDF 分流）。只用 Tesseract，不需要 PaddleOCR。
+# 已驗證版本：Python 3.14.6、Tesseract 5.5.3 + tessdata_fast
+pymupdf==2.1
+opencv-python-headless==5.0.0.93
+pytesseract==0.3.13
+numpy==2.5.4
+pillow==13.0.0
+reportlab==5.1.0

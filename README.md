@@ -44,6 +44,8 @@ Tesseract OCR（原生 PDF 直接讀文字層）→ 規則抽取單號、日期�
 
 儀表板三頁：**掃描文件**（每份文件的縮圖與判讀結果）→ **單份檢視**（在原圖上標出各欄位的讀取位置）→ **統計數據**。
 
+**V2：封測客戶訂單 + PDF 分流**（同資料夾）：電子 PDF 直接讀文字層，掃描檔經 OpenCV 二值化與傾斜校正後送 Tesseract；訂單與虛構的客戶、料號、晶圓庫存、報價主檔比對，分成通過／需人工確認／明顯錯誤。只用 Tesseract（企業資安考量）。執行 `python demo_run.py` 看 demo，說明與結果見 `doc_pipeline/README.md`。
+
 ## 專案二：採購單品項明細（`order_ocr/`）
 
 Windows 內建 OCR → 去除紅色印章 → 依版面位置解析每一列品項 → 主檔比對、數量 × 單價 × 合計交叉驗證 → 自動放行或人工確認 → 輸出 ERP 匯入用 Excel。
@@ -69,6 +71,15 @@ ERP 匯入檔範例：`order_ocr/output/erp_import.xlsx`（訂單抬頭、訂單
 - 測試單據為虛構資料，每批 20～40 份；這是方法示範，不是上線準確率保證。
 - 主資料比對屬於封閉世界測試（測試文件的廠商都在主資料內）。
 - 下一步：以去識別化的真實單據重新驗證、比較不同 OCR 引擎，並依公司 ERP 匯入範本對接。
+
+## 環境需求
+
+- Python 3.10 以上（已在 3.14.6 驗證）
+- **Tesseract 5.5.3，語言模型必須使用 [tessdata_fast](https://github.com/tesseract-ocr/tessdata_fast) 版本的 `chi_tra` 與 `eng`**
+  - Windows 可用 `scoop install tesseract`，再把 tessdata_fast 的 `chi_tra.traineddata`、`eng.traineddata` 放進 `TESSDATA_PREFIX` 指向的資料夾
+  - 原因：專案一的規則是在 tessdata_fast 的輸出上開發的。官方預設的 `tessdata` 版本在同一個 Tesseract 上會在中文字之間插入空白（`發 票 號 碼`），並輸出小型全形標點（`﹕﹣﹒﹩`），規則比對不到，原始批全對率會從 75% 掉到 50%、保留批從 55% 掉到 40%。`tessdata_best` 也有類似問題
+  - 用 tessdata_fast 重跑的 V1 基準與原始結果逐檔一致，紀錄在 `doc_pipeline/baselines/`
+- 不需要 PaddleOCR：未安裝時程式自動改用 Tesseract，上述所有數字都是 Tesseract 的結果
 
 ## 重新執行評估（進階）
 

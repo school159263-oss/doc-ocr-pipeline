@@ -1,0 +1,558 @@
+﻿file,variant,route,bin,blur_k,angle_true,angle_measured,expected_grade,injected_error,angle_err,norm_pred_po_no,norm_pred_customer,norm_pred_customer_part_no,norm_pred_wafer_lot_id,norm_pred_wafer_size,norm_pred_package_type,norm_pred_die_count,norm_pred_unit_price,norm_pred_price_unit,norm_pred_delivery_date,norm_ok_po_no,norm_ok_customer,norm_ok_customer_part_no,norm_ok_wafer_lot_id,norm_ok_wafer_size,norm_ok_package_type,norm_ok_die_count,norm_ok_unit_price,norm_ok_price_unit,norm_ok_delivery_date,norm_doc_correct,norm_grade,norm_grade_ok,norm_reasons,raw_pred_po_no,raw_pred_customer,raw_pred_customer_part_no,raw_pred_wafer_lot_id,raw_pred_wafer_size,raw_pred_package_type,raw_pred_die_count,raw_pred_unit_price,raw_pred_price_unit,raw_pred_delivery_date,raw_ok_po_no,raw_ok_customer,raw_ok_customer_part_no,raw_ok_wafer_lot_id,raw_ok_wafer_size,raw_ok_package_type,raw_ok_die_count,raw_ok_unit_price,raw_ok_price_unit,raw_ok_delivery_date,raw_doc_correct,raw_grade,raw_grade_ok,raw_reasons,ocr_text
+o01_electronic.pdf,electronic,electronic,電子 PDF,0,0.0,,通過,,,PO-2026-3742,Globex Microdevices,OSAT-CHIP-9903,LOT-2026-C41,12-inch,CSP,13050,2180.0,per wafer,2027-01-06,True,True,True,True,True,True,True,True,True,True,True,通過,True,,PO-2026-3742,Globex Microdevices,OSAT-CHIP-9903,LOT-2026-C41,12-inch,CSP,13050,2180.0,per wafer,2027-01-06,True,True,True,True,True,True,True,True,True,True,True,通過,True,,"封測客戶訂單 OSAT Customer Order
+
+
+
+客戶PO號 PO No.：PO-2026-3742
+
+客戶名稱 Customer：Globex Microdevices
+
+客戶料號 Customer P/N：OSAT-CHIP-9903
+
+晶圓批號 Wafer Lot：LOT-2026-C41
+
+晶圓尺寸 Wafer Size：12-inch
+
+封裝型式 Package：CSP
+
+晶粒數量 Die Qty：13,050
+
+單價 Unit Price：US$ 2,180.00
+
+計價單位 Price Unit：per wafer
+
+交期 Delivery：2027/01/06
+
+
+
+
+
+本文件為虛構測試資料 Fictional test data"
+o02_electronic.pdf,electronic,electronic,電子 PDF,0,0.0,,通過,,,PO-2026-1434,Globex Microdevices,OSAT-CHIP-9903,LOT-2026-C41,12-inch,BGA,27300,2180.0,per wafer,2027-02-19,True,True,True,True,True,True,True,True,True,True,True,通過,True,,PO-2026-1434,Globex Microdevices,OSAT-CHIP-9903,LOT-2026-C41,12-inch,BGA,27300,2180.0,per wafer,2027-02-19,True,True,True,True,True,True,True,True,True,True,True,通過,True,,"封測客戶訂單 OSAT Customer Order
+
+
+
+客戶PO號 PO No.：PO-2026-1434
+
+客戶名稱 Customer：Globex Microdevices
+
+客戶料號 Customer P/N：OSAT-CHIP-9903
+
+晶圓批號 Wafer Lot：LOT-2026-C41
+
+晶圓尺寸 Wafer Size：12-inch
+
+封裝型式 Package：BGA
+
+晶粒數量 Die Qty：27,300
+
+單價 Unit Price：US$ 2,180.00
+
+計價單位 Price Unit：per wafer
+
+交期 Delivery：2027/02/19
+
+
+
+
+
+本文件為虛構測試資料 Fictional test data"
+o03_electronic.pdf,electronic,electronic,電子 PDF,0,0.0,,通過,,,PO-2026-4887,Contoso Chipworks,OSAT-CHIP-9909,LOT-2026-H19,12-inch,BGA,22800,3615.0,per wafer,2027-02-05,True,True,True,True,True,True,True,True,True,True,True,通過,True,,PO-2026-4887,Contoso Chipworks,OSAT-CHIP-9909,LOT-2026-H19,12-inch,BGA,22800,3615.0,per wafer,2027-02-05,True,True,True,True,True,True,True,True,True,True,True,通過,True,,"封測客戶訂單 OSAT Customer Order
+
+
+
+客戶PO號 PO No.：PO-2026-4887
+
+客戶名稱 Customer：Contoso Chipworks
+
+客戶料號 Customer P/N：OSAT-CHIP-9909
+
+晶圓批號 Wafer Lot：LOT-2026-H19
+
+晶圓尺寸 Wafer Size：12-inch
+
+封裝型式 Package：BGA
+
+晶粒數量 Die Qty：22,800
+
+單價 Unit Price：US$ 3,615.00
+
+計價單位 Price Unit：per wafer
+
+交期 Delivery：2027/02/05
+
+
+
+
+
+本文件為虛構測試資料 Fictional test data"
+o04_electronic.pdf,electronic,electronic,電子 PDF,0,0.0,,需人工確認,lot_missing,,PO-2026-9463,ACME Semi,OSAT-CHIP-9901,LOT-2026-Z76,12-inch,BGA,7950,3250.0,per wafer,2026-12-17,True,True,True,True,True,True,True,True,True,True,True,需人工確認,True,晶圓批號 LOT-2026-Z76 不在來料庫存，待確認,PO-2026-9463,ACME Semi,OSAT-CHIP-9901,LOT-2026-Z76,12-inch,BGA,7950,3250.0,per wafer,2026-12-17,True,True,True,True,True,True,True,True,True,True,True,需人工確認,True,晶圓批號 LOT-2026-Z76 不在來料庫存，待確認,"封測客戶訂單 OSAT Customer Order
+
+
+
+客戶PO號 PO No.：PO-2026-9463
+
+客戶名稱 Customer：ACME Semi
+
+客戶料號 Customer P/N：OSAT-CHIP-9901
+
+晶圓批號 Wafer Lot：LOT-2026-Z76
+
+晶圓尺寸 Wafer Size：12-inch
+
+封裝型式 Package：BGA
+
+晶粒數量 Die Qty：7,950
+
+單價 Unit Price：US$ 3,250.00
+
+計價單位 Price Unit：per wafer
+
+交期 Delivery：2026/12/17
+
+
+
+
+
+本文件為虛構測試資料 Fictional test data"
+o05_scan.pdf,scan,scan,|θ| < 1°,3,0.63,0.65,通過,,0.020000000000000018,PO-2026-7740,ACME Semi,OSAT-CHIP-9902,LOT-2026-X88,12-inch,CSP,28000,85.5,per 1k units,2026-12-13,True,True,True,True,True,True,True,True,True,True,True,通過,True,,PO-2026-7740,ACME Semi,OSAT-CHIP-9902,LOT-2026-X88,12-inch,CSP,28000,85.5,per 1k units,2026-12-13,True,True,True,True,True,True,True,True,True,True,True,通過,True,,"封測客戶訂單 OSAT Customer Order
+
+客戶PO號 PO No. : PO-2026-7740
+
+客戶名稱 Customer : ACME Semi
+
+客戶料號 Customer P/N : OSAT-CHIP-9902
+唱圓批號 Wafer Lot : LOT-2026-X88
+
+aa] Rt Wafer Size : 12-inch
+
+封裝型式 Package : CSP
+
+晶粒數量 Die Qty : 28,000
+
+單價 Unit price : US$ 85.50
+
+計價單位 Price Unit : per 1k units
+
+30 HA Delivery : 2026/12/13
+
+本文件為虛構測試資料 Fictional test data
+"
+o06_scan.pdf,scan,scan,|θ| < 1°,3,0.7,0.7,需人工確認,price_mismatch,0.0,PO-2026-4622,ACME Semi,OSAT-CHIP-9902,LOT-2026-X88,12-inch,BGA,1550,92.0,per 1k units,2027-01-03,True,True,True,True,True,True,True,True,True,True,True,需人工確認,True,單價 92.00 與報價 85.50 不符（差 +6.50）,PO-2026-4622,ACME Semi,OSAT-CHIP-9902,LOT-2026-X88,12-inch,BGA,1550,92.0,per 1k units,2027-01-03,True,True,True,True,True,True,True,True,True,True,True,需人工確認,True,單價 92.00 與報價 85.50 不符（差 +6.50）,"封測客戶訂單 OSAT Customer Order
+
+客戶PO號 PO No. : PO-2026-4622
+
+客戶名稱 Customer : ACME Semi
+
+客戶料號 Customer P/N : OSAT-CHIP-9902
+晶圓批號 Wafer Lot : LOT-2026-X88
+
+aa Rt Wafer Size : 12-inch
+
+封裝型式 Package : BGA
+
+aa #1 87 Die Qty : 1,550
+
+單價 Unit Price : US$ 92.00
+
+計價單位 Price Unit : per 1k units
+
+38 HA Delivery : 2027/01/03
+
+BNE AL MM Mit WH Fictional test data
+"
+o07_scan.pdf,scan,scan,|θ| < 1°,3,-0.37,-0.35,通過,,0.020000000000000018,PO-2026-5791,Umbrella Photonics,OSAT-CHIP-9908,LOT-2026-F35,8-inch,QFN,15550,94.2,per 1k units,2026-12-02,True,True,True,True,True,True,True,True,True,True,True,通過,True,,PO-2026-5791,Umbrella Photonics,OSAT-CHIP-9908,LOT-2026-F35,8-inch,QFN,15550,94.2,per 1k units,2026-12-02,True,True,True,True,True,True,True,True,True,True,True,通過,True,,"封測客戶訂單 OSAT Customer Order
+
+客戶PO號 PO No. : PO-2026-5791
+
+客戶名稱 Customer : Umbrella Photonics
+客戶料號 Customer P/N : OSAT-CHIP-9908
+晶圓批號 Wafer Lot : LOT-2026-F35
+
+晶圓尺寸 Wafer Size : 8-inch
+
+封裝型式 Package : QFN
+
+品粒數量 Die Qty : 15,550
+
+單價 Unit Price : US$ 94.20
+
+計價單位 Price Unit : per 1k units
+
+30 HA Delivery : 2026/12/02
+
+本文件為虛構測試資料 Fictional test data
+"
+o08_scan.pdf,scan,scan,|θ| < 1°,3,-0.51,-0.4,需人工確認,customer_typo,0.10999999999999999,PO-2026-8416,Globex Microdevice,OSAT-CHIP-9904,LOT-2026-B23,8-inch,QFN,7600,62.4,per 1k units,2027-01-02,True,True,True,True,True,True,True,True,True,True,True,需人工確認,True,客戶名稱疑似「Globex Microdevices」（相似度 0.971），不完全相符,PO-2026-8416,Globex Microdevice,OSAT-CHIP-9904,LOT-2026-B23,8-inch,QFN,7600,62.4,per 1k units,2027-01-02,True,True,True,True,True,True,True,True,True,True,True,需人工確認,True,客戶名稱疑似「Globex Microdevices」（相似度 0.971），不完全相符,"封測客戶訂單 OSAT Customer Order
+
+客戶PO號 PO No. : PO-2026-8416
+
+客戶名稱 Customer : Globex Microdevice
+客戶料號 Customer P/N : OSAT-CHIP-9904
+晶圓批號 Wafer Lot : LOT-2026-B23
+
+aul Rt Wafer Size : 8-inch
+
+封裝型式 Package : QFN
+
+唱粒數轉 Die Qty : 7,600
+
+單價 Unit Price : US$ 62.40
+
+計價單位 Price Unit : per 1k units
+
+交期 Delivery : 2027/01/02
+
+本文件為虛構測試資料 Fictional test data
+"
+o09_scan.pdf,scan,scan,1° ≤ |θ| < 3°,3,-1.85,-1.85,通過,,0.0,PO-2026-5965,ACME Semi,OSAT-CHIP-9902,LOT-2026-A17,12-inch,CSP,18150,85.5,per 1k units,2027-01-03,True,True,True,True,True,True,True,True,True,True,True,通過,True,,PO-2026-5965,ACME Semi,OSAT-CHIP-9902,LOT-2026-A17,12-inch,CSP,18150,85.5,per 1k units,2027-01-03,True,True,True,True,True,True,True,True,True,True,True,通過,True,,"封測客戶訂單 OSAT Customer Order
+
+客戶PO號 PO No. : PO-2026-5965
+
+客戶名稱 Customer : ACME Semi
+
+客戶料號 Customer P/N : OSAT-CHIP-9902
+晶圓批號 Wafer Lot : LOT-2026-A17
+
+唱圓尺寸 Wafer Size : 12-inch
+
+封裝型式 Package : CSP
+
+晶粒數量 Die Qty : 18,150
+
+單價 Unit Price : US$ 85.50
+
+計價單位 Price Unit : per 1k units
+
+3088 Delivery : 2027/01/03
+
+本文件為虛構測試資料 Fictional test data
+"
+o10_scan.pdf,scan,scan,1° ≤ |θ| < 3°,3,-2.41,-2.4,明顯錯誤,part_unknown,0.010000000000000231,PO-2026-1134,Contoso Chipworks,OSAT-CHIP-9970,LOT-2026-H19,12-inch,BGA,23050,71.8,per 1k units,2027-02-11,True,True,True,True,True,True,True,True,True,True,True,明顯錯誤,True,客戶料號不在對照表：OSAT-CHIP-9970,PO-2026-1134,Contoso Chipworks,OSAT-CHIP-9970,LOT-2026-H19,12-inch,BGA,23050,71.8,per 1k units,2027-02-11,True,True,True,True,True,True,True,True,True,True,True,明顯錯誤,True,客戶料號不在對照表：OSAT-CHIP-9970,"封測客戶訂單 OSAT Customer Order
+
+客戶PO號 PO No. : PO-2026-1134
+客戶名稱 Customer : Contoso Chipworks
+客戶料號 Customer P/N : OSAT-CHIP-9970
+晶圓批號 Wafer Lot : LOT-2026-H19
+
+晶圓尺寸 Wafer Size : 12-inch
+
+封裝型式 Package : BGA
+
+KISH Die Qty : 23,050
+
+單價 Unit Price : US$ 71.80
+
+計價單位 Price Unit : per 1k units
+
+交期 Delivery : 2027/02/11
+
+本文件為虛構測試資料 Fictional test data
+"
+o11_scan.pdf,scan,scan,1° ≤ |θ| < 3°,3,1.52,1.5,明顯錯誤,part_unknown,0.020000000000000018,PO-2026-6042,Contoso Chipworks,OSAT-CHIP-9993,LOT-2026-H19,12-inch,QFN,2750,71.8,per 1k units,2027-01-23,True,True,True,True,True,True,True,True,True,True,True,明顯錯誤,True,客戶料號不在對照表：OSAT-CHIP-9993,PO-2026-6042,Contoso Chipworks,OSAT-CHIP-9993,LOT-2026-H19,12-inch,QFN,2750,71.8,per 1k units,2027-01-23,True,True,True,True,True,True,True,True,True,True,True,明顯錯誤,True,客戶料號不在對照表：OSAT-CHIP-9993,"封測客戶訂單 OSAT Customer Order
+
+客戶PO號 PO No. : PO-2026-6042
+
+客戶名稱 Customer : Contoso Chipworks
+客戶料號 Customer P/N : OSAT-CHIP-9993
+晶圓批號 Wafer Lot : LOT-2026-H19
+
+晶圓尺寸 Wafer Size : 12-inch
+
+封裝型式 Package: QFN
+
+晶粒數轉 Die Qty : 2,750
+
+單價 Unit Price : US$ 71.80
+
+計價單位 Price Unit : per 1k units
+
+交期 Delivery : 2027/01/23
+
+本文件為處構測試資料 Fictional test data
+"
+o12_scan.pdf,scan,scan,1° ≤ |θ| < 3°,3,-2.22,-2.2,通過,,0.020000000000000018,PO-2026-1209,Contoso Chipworks,OSAT-CHIP-9910,LOT-2026-H19,12-inch,CSP,2000,71.8,per 1k units,2026-12-25,True,True,True,True,True,True,True,True,True,True,True,通過,True,,PO-2026-1209,Contoso Chipworks,OSAT-CHIP-9910,LOT-2026-H19,12-inch,CSP,2000,71.8,per 1k units,2026-12-25,True,True,True,True,True,True,True,True,True,True,True,通過,True,,"封測客戶訂單 OSAT Customer Order
+
+客戶PO號 PO No. : PO-2026-1209
+客戶名稱 Customer : Contoso Chipworks
+客戶料號 Customer P/N : OSAT-CHIP-9910
+唱圓批號 Wafer Lot : LOT-2026-H19
+
+晶圓尺寸 Wafer Size : 12-inch
+
+封裝型式 Package : CSP
+
+晶粒數量 Die Qty : 2,000
+
+單價 Unit Price : US$ 71.80
+
+計價單位 Price Unit : per 1k units
+
+38 HA Delivery : 2026/12/25
+
+本文件為虛構測試資料 Fictional test data
+"
+o13_scan.pdf,scan,scan,3° ≤ |θ| < 6°,3,4.25,4.3,需人工確認,price_mismatch,0.04999999999999982,PO-2026-8341,ACME Semi,OSAT-CHIP-9902,LOT-2026-X88,12-inch,QFN,16200,79.0,per 1k units,2026-12-30,True,True,True,True,True,True,True,True,True,True,True,需人工確認,True,單價 79.00 與報價 85.50 不符（差 -6.50）,PO-2026-8341,ACME Semi,OSAT-CHIP-9902,LOT-2026-X88,12-inch,QFN,16200,79.0,per 1k units,2026-12-30,True,True,True,True,True,True,True,True,True,True,True,需人工確認,True,單價 79.00 與報價 85.50 不符（差 -6.50）,"封測客戶訂單 OSAT Customer Order
+
+客戶PO號 PO No. : PO-2026-8341
+
+客戶名稱 Customer : ACME Semi
+
+客戶料號 Customer P/N : OSAT-CHIP-9902
+唱圓批號 Wafer Lot : LOT-2026-X88
+
+a2 Rt Wafer Size : 12-inch
+
+封裝型式 Package : QFN
+
+gat #1 Die Qty : 16,200
+
+單價 Unit Price : US$ 79.00
+
+計價單位 Price Unit : per 1k units
+
+交期 Delivery : 2026/12/30
+
+ANEABE MAE RE Fictional test data
+"
+o14_scan.pdf,scan,scan,3° ≤ |θ| < 6°,3,4.93,4.95,通過,,0.020000000000000462,PO-2026-4876,Contoso Chipworks,OSAT-CHIP-9910,LOT-2026-K47,8-inch,CSP,11400,71.8,per 1k units,2026-12-19,True,True,True,True,True,True,True,True,True,True,True,通過,True,,PO-2026-4876,Contoso Chipworks,OSAT-CHIP-9910,LOT-2026-K47,8-inch,CSP,11400,71.8,per 1k units,2026-12-19,True,True,True,True,True,True,True,True,True,True,True,通過,True,,"封測客戶訂單 OSAT Customer Order
+
+客戶PO號 PO No. : PO-2026-4876
+
+客戶名稱 Customer : Contoso Chipworks
+客戶料號 Customer P/N : OSAT-CHIP-9910
+品圓批號 Wafer Lot : LOT-2026-K47
+
+晶圓尺寸 Wafer Size : 8-inch
+
+封裝型式 Package : CSP
+
+aa 4129 Die Qty : 11,400
+
+單價 Unit Price : US$ 71.80
+
+計價單位 Price Unit : per 1k units
+
+308A Delivery : 2026/12/19
+
+本文件為虛構測試資料 Fictional test data
+"
+o15_scan.pdf,scan,scan,3° ≤ |θ| < 6°,3,-4.85,-4.85,需人工確認,lot_missing,0.0,PO-2026-9608,Globex Microdevices,OSAT-CHIP-9903,LOT-2026-Z82,12-inch,BGA,17550,2180.0,per wafer,2026-12-02,True,True,True,True,True,True,True,True,True,True,True,需人工確認,True,晶圓批號 LOT-2026-Z82 不在來料庫存，待確認,PO-2026-9608,Globex Microdevices,OSAT-CHIP-9903,LOT-2026-Z82,12-inch,BGA,17550,2180.0,per wafer,2026-12-02,True,True,True,True,True,True,True,True,True,True,True,需人工確認,True,晶圓批號 LOT-2026-Z82 不在來料庫存，待確認,"封測客戶訂單 OSAT Customer Order
+
+客戶PO號 PO No. : PO-2026-9608
+
+客戶名稱 Customer : Globex Microdevices
+客戶料號 Customer P/N : OSAT-CHIP-9903
+唱圓批號 Wafer Lot : LOT-2026-Z82
+
+aa R<t Wafer Size : 12-inch
+
+封裝型式 Package : BGA
+
+aa M11 Die Qty : 17,550
+
+單價 Unit Price : US$ 2,180.00
+
+計價單位 Price Unit : per wafer
+
+30 HA Delivery : 2026/12/02
+
+本文件為虛構測試資料 Fictional test data
+"
+o16_scan.pdf,scan,scan,3° ≤ |θ| < 6°,3,4.17,4.15,通過,,0.019999999999999574,PO-2026-4981,Globex Microdevices,OSAT-CHIP-9903,LOT-2026-C41,12-inch,CSP,22950,2180.0,per wafer,2026-12-15,True,True,True,True,True,True,True,True,True,True,True,通過,True,,PO-2026-4981,Globex Microdevices,OSAT-CHIP-9903,LOT-2026-C41,12-inch,CSP,22950,2180.0,per wafer,2026-12-15,True,True,True,True,True,True,True,True,True,True,True,通過,True,,"封測客戶訂單 OSAT Customer Order
+
+客戶PO號 PO No. : PO-2026-4981
+
+客戶名稱 Customer : Globex Microdevices
+客戶料號 Customer P/N : OSAT-CHIP-9903
+an MALS Wafer Lot : LOT-2026-C41
+
+sa Ml sf Wafer Size : 12-inch
+
+封裝型式 Package : CSP
+
+晶爛數畢 Die Qty : 22,950
+
+單價 Unit Price : US$ 2,180.00
+
+計價單位 Price Unit : per wafer
+
+308A Delivery : 2026/12/15
+
+ABRAM tl A it WH Fictional test data
+"
+o17_scan.pdf,scan,scan,6° ≤ |θ| ≤ 10°,3,-8.91,-8.9,通過,,0.009999999999999787,PO-2026-5781,Globex Microdevices,OSAT-CHIP-9904,LOT-2026-C41,12-inch,QFN,18750,62.4,per 1k units,2026-12-22,True,True,True,True,True,True,True,True,True,True,True,通過,True,,PO-2026-5781,Globex Microdevices,OSAT-CHIP-9904,LOT-2026-C41,12-inch,QFN,18750,62.4,per 1k units,2026-12-22,True,True,True,True,True,True,True,True,True,True,True,通過,True,,"封測客戶訂單 OSAT Customer Order
+
+客戶PO號 PO No. : PO-2026-5781
+
+客戶名稱 Customer : Globex Microdevices
+客戶料號 Customer P/N : OSAT-CHIP-9904
+晶圓批號 Wafer Lot : LOT-2026-C41
+
+晶圓尺寸 Wafer Size : 12-inch
+
+封裝型式 Package : QFN
+
+唱粒數轉 Die Qty : 18,750
+
+單價 Unit price : US$ 62.40
+
+計價單位 Price Unit : per 1k units
+
+30 HR Delivery : 2026/12/22
+
+本文件為虛構測試資料 Fictional test data
+"
+o18_scan.pdf,scan,scan,6° ≤ |θ| ≤ 10°,3,-7.59,-7.6,需人工確認,price_mismatch,0.009999999999999787,PO-2026-8886,Initech Silicon,OSAT-CHIP-9906,LOT-2026-E64,12-inch,CSP,13350,125.25,per 1k units,2026-12-14,True,True,True,True,True,True,True,True,True,True,True,需人工確認,True,單價 125.25 與報價 118.75 不符（差 +6.50）,PO-2026-8886,Initech Silicon,OSAT-CHIP-9906,LOT-2026-E64,12-inch,CSP,13350,125.25,per 1k units,2026-12-14,True,True,True,True,True,True,True,True,True,True,True,需人工確認,True,單價 125.25 與報價 118.75 不符（差 +6.50）,"封測客戶訂單 OSAT Customer Order
+
+客戶PO號 PO No. : PO-2026-8886
+
+客戶名稱 Customer : Initech Silicon
+
+客戶料號 Customer P/N : OSAT-CHIP-9906
+ae Mts Wafer Lot : LOT-2026-E64
+
+aa Rt Wafer Size : 12-inch
+
+封裝型式 Package : CSP
+
+SAX SUM Die Qty : 13,350
+
+單價 Unit Price : US$ 125.25
+
+計價單位 Price Unit : per 1k units
+
+388A Delivery : 2026/12/14
+
+本文件為虛構測試資料 Fictionaltest data
+"
+o19_scan.pdf,scan,scan,6° ≤ |θ| ≤ 10°,3,-6.83,-6.85,需人工確認,lot_missing,0.019999999999999574,PO-2026-1734,Umbrella Photonics,OSAT-CHIP-9907,LOT-2026-Z33,8-inch,QFN,15550,2740.0,per wafer,2026-12-02,True,True,True,True,True,True,True,True,True,True,True,需人工確認,True,晶圓批號 LOT-2026-Z33 不在來料庫存，待確認,PO-2026-1734,Umbrella Photonics,OSAT-CHIP-9907,LOT-2026-Z33,8-inch,QFN,15550,2740.0,per wafer,2026-12-02,True,True,True,True,True,True,True,True,True,True,True,需人工確認,True,晶圓批號 LOT-2026-Z33 不在來料庫存，待確認,"封測客戶訂單 OSAT Customer Order
+
+客戶PO號 PO No. : PO-2026-1734
+
+客戶名稱 Customer : Umbrella Photonics
+客戶料號 Customer P/N : OSAT-CHIP-9907
+晶圓批號 Wafer Lot : LOT-2026-Z33
+
+唱圓尺寸 Wafer Size : 8-inch
+
+封裝型式 Package : QFN
+
+晶爛數旦 Die Qty : 15,550
+
+單價 Unit Price : US$ 2,740.00
+
+計價單位 Price Unit : per wafer
+
+交期 Delivery : 2026/12/02
+
+本文件為處檔測試資料 Fictional test data
+"
+o20_scan.pdf,scan,scan,6° ≤ |θ| ≤ 10°,3,9.17,9.2,需人工確認,customer_typo,0.02999999999999936,PO-2026-7680,Initech Silico,OSAT-CHIP-9905,LOT-2026-E64,12-inch,QFN,17750,1960.0,per wafer,2026-12-10,True,True,True,True,True,True,True,True,True,True,True,需人工確認,True,客戶名稱疑似「Initech Silicon」（相似度 0.963），不完全相符,PO-2026-7680,Initech Silico,OSAT-CHIP-9905,LOT-2026-E64,12-inch,QFN,17750,1960.0,per wafer,2026-12-10,True,True,True,True,True,True,True,True,True,True,True,需人工確認,True,客戶名稱疑似「Initech Silicon」（相似度 0.963），不完全相符,"封測客戶訂單 OSAT Customer Order
+
+客戶PO號 PO No. : PO-2026-7680
+
+客戶名稱 Customer : Initech Silico
+
+客戶料號 Customer P/N : OSAT-CHIP-9905
+唱圓批號 Wafer Lot : LOT-2026-E64
+
+晶圓尺寸 Wafer Size : 12-inch
+
+封裝型式 Package : QFN
+
+an 18H Die Qty : 17,750
+
+單價 Unit Price : US$ 1,960.00
+
+計價單位 Price Unit : per wafer
+
+388A Delivery : 2026/12/10
+
+本文件為虛構測試資料 Fictional test data
+"
+o21_blur.pdf,blur,scan,模糊 blur,5,-0.9,-0.9,通過,,0.0,PO-2026-4938,Globex Microdevices,OSAT-CHIP-9903,LOT-2026-B23,8-inch,BGA,23200,2180.0,per wafer,2026-12-25,True,True,True,True,True,True,True,True,True,True,True,通過,True,,PO-2026-4938,Globex Microdevices,OSAT-CHIP-9903,LOT-2026-B23,8-inch,BGA,23200,2180.0,per wafer,2026-12-25,True,True,True,True,True,True,True,True,True,True,True,通過,True,,"封測客戶訂單 OSAT Customer Order
+
+客戶PO號 PO No. : PO-2026-4938
+
+客戶名稱 Customer : Globex Microdevices
+客戶料號 Customer P/N : OSAT-CHIP-9903
+唱圓批號 Wafer Lot : LOT-2026-B23
+
+唱圓尺寸 Wafer Size : 8-inch
+
+封裝型式 Package : BGA
+
+唱粒數量 Die Qty : 23,200
+
+單價 Unit Price : US$ 2,180.00
+
+計價單位 Price Unit : per wafer
+
+交期 Delivery : 2026/12/25
+
+BNE BEM AI WH Fictional test data
+"
+o22_blur.pdf,blur,scan,模糊 blur,9,-0.8,-0.75,需人工確認,price_mismatch,0.050000000000000044,PO-2026-1399,Umbrella Photonics,OSAT-CHIP-9908,LOT-2026-G76,12-inch,BGA,5650,100.7,per 1k units,2026-12-15,True,True,True,True,True,True,True,True,True,True,True,需人工確認,True,單價 100.70 與報價 94.20 不符（差 +6.50）,PO-2026-1399,Umbrella Photonics,OSAT-CHIP-9908,LOT-2026-G76,12-inch,BGA,5650,100.7,per 1k units,2026-12-15,True,True,True,True,True,True,True,True,True,True,True,需人工確認,True,單價 100.70 與報價 94.20 不符（差 +6.50）,"封測客戶訂單 OSAT Customer Order
+
+客戶PO號 PO No. : PO-2026-1399
+
+客戶名稱 Customer : Umbrella Photonics
+客戶料號 Customer P/N : OSAT-CHIP-9908
+晶圖批號 Wafer Lot : LOT-2026-G76
+ABR Wafer Size : 12-inch
+
+對裝型式 Package : BGA
+
+AMNBE Die Qty : 5,650
+
+單價 Unit Price : US$ 100.70
+
+計價單位 Price Unit : per 1k units
+
+32M Delivery : 2026/12/15
+
+ZXXKABAAN RG Fictional test data
+"
+o23_blur.pdf,blur,scan,模糊 blur,13,-0.67,-0.65,通過,,0.020000000000000018,PO-2026-2104,Contoso Chipworks,OSAT-CHIP-9909,LOT-2026-K47,,BGA,28.850,3615.0,,2026-12-21,True,True,True,True,False,True,False,True,False,True,False,明顯錯誤,False,缺少欄位：晶圓尺寸; 缺少欄位：計價單位; 晶粒數量必須是正整數：28.850,PO-2026-2104,Contoso Chipworks,OSAT-CHIP-9909,LOT-2026-K47,,BGA,28.850,3615.0,,2026-12-21,True,True,True,True,False,True,False,True,False,True,False,明顯錯誤,False,缺少欄位：晶圓尺寸; 缺少欄位：計價單位; 晶粒數量必須是正整數：28.850,"封測客戶訂單 OSAT Customer Order
+
+客戶PO號 PO No. : PO-2026-2104
+
+客戶名稱 Custormer : Contoso Chipworks
+BERR Customer P/N : OSAT-CHIP-9909
+SBUMR Water Lot : LOT-2026-K47
+BER Water Size : 8-inch
+
+$908 Bi xt Package : BGA
+
+SURE Die Qty : 28.850
+
+WM Unit Price : US$ 3,615.00
+
+§t @W EG Price Unt : per wafer
+
+3M Delivery : 2026/12/21
+
+SX RRRAM RA Fichors test data
+"
+o24_blur.pdf,blur,scan,模糊 blur,17,0.37,0.3,需人工確認,lot_missing,0.07,PO-2026-7394,,OSAT-CHP-9902,LOT-2026-721,,BGA,,,per 1k urwts,,True,False,False,False,False,True,False,False,False,False,False,明顯錯誤,False,缺少欄位：客戶名稱; 缺少欄位：晶圓尺寸; 缺少欄位：晶粒數量; 缺少欄位：單價; 缺少欄位：交期; 計價單位不合法：per 1k urwts; 客戶料號不在對照表：OSAT-CHP-9902; 晶圓批號 LOT-2026-721 不在來料庫存，待確認,PO-2026-7394,,OSAT-CHP-9902,LOT-2026-721,,BGA,,,per 1k urwts,,True,False,False,False,False,True,False,False,False,False,False,明顯錯誤,False,缺少欄位：客戶名稱; 缺少欄位：晶圓尺寸; 缺少欄位：晶粒數量; 缺少欄位：單價; 缺少欄位：交期; 計價單位不合法：per 1k urwts; 客戶料號不在對照表：OSAT-CHP-9902; 晶圓批號 LOT-2026-721 不在來料庫存，待確認,"對測客戶訂單 OSAT Customer Order
+
+全有PO號 PO No. : PO-2026-7394
+
+BP SE Customer ACME Semi
+
+BAUR Customer P/N: OSAT-CHP-9902
+SBR Water Lot : LOT-2026-721
+BBR Water Size 12-inch
+
+$90 WT Package : BGA
+BURBS Ore Qty : 28.900
+
+BR Unt Price . USS 85.50
+
+BE Price Unit; per 1k urwts
+
+2M Oelvery 2027/01/16
+
+@7S SSARARA Keven tort dete
+"

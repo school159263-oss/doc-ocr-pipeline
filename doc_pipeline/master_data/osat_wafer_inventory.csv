@@ -1,0 +1,11 @@
+wafer_lot_id,customer,wafer_size,wafers_on_hand
+LOT-2026-X88,ACME Semi,12-inch,25
+LOT-2026-A17,ACME Semi,12-inch,50
+LOT-2026-B23,Globex Microdevices,8-inch,25
+LOT-2026-C41,Globex Microdevices,12-inch,75
+LOT-2026-D52,Initech Silicon,8-inch,50
+LOT-2026-E64,Initech Silicon,12-inch,25
+LOT-2026-F35,Umbrella Photonics,8-inch,25
+LOT-2026-G76,Umbrella Photonics,12-inch,50
+LOT-2026-H19,Contoso Chipworks,12-inch,25
+LOT-2026-K47,Contoso Chipworks,8-inch,50
