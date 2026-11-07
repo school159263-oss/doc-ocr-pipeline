@@ -1,7 +1,7 @@
 """V2：產生虛構的封測客戶訂單。
 
-    python generate_osat_samples.py --samples   # samples/：一份電子 PDF + 由它轉成的傾斜加雜訊純影像 PDF（demo 用）
-    python generate_osat_samples.py --eval      # docs_osat/ + ground_truth_osat.csv：20 份評估集
+    python generate_osat_samples.py --samples   # samples/：4 份 demo 範例，涵蓋通過／需人工確認／明顯錯誤
+    python generate_osat_samples.py --eval      # docs_osat/ + ground_truth_osat.csv：24 份評估集（含 4 份模糊樣本）
     python generate_osat_samples.py             # 兩者都產生
 
 客戶、料號、批號全部虛構（ACME Semi、OSAT-CHIP-99xx、LOT-2026-xxx），與 master_data/ 對應。
@@ -104,14 +104,14 @@ def draw_order_pdf(rec: dict, font: str) -> bytes:
     return buf.getvalue()
 
 
-def scan_from_pdf(pdf_bytes: bytes, angle: float, noise: float, nrng) -> Image.Image:
-    """電子 PDF → 灰階圖片 → 旋轉 angle 度（逆時針為正）→ 輕微模糊 + 高斯雜訊。"""
+def scan_from_pdf(pdf_bytes: bytes, angle: float, noise: float, nrng, blur_k: int = 3) -> Image.Image:
+    """電子 PDF → 灰階圖片 → 旋轉 angle 度（逆時針為正）→ 高斯模糊（核大小 blur_k）+ 高斯雜訊。"""
     pix = pymupdf.open(stream=pdf_bytes, filetype="pdf")[0].get_pixmap(dpi=SCAN_DPI, colorspace=pymupdf.csGRAY)
     a = np.frombuffer(pix.samples, dtype=np.uint8).reshape(pix.height, pix.width)
     h, w = a.shape
     M = cv2.getRotationMatrix2D((w / 2, h / 2), angle, 1.0)
     a = cv2.warpAffine(a, M, (w, h), flags=cv2.INTER_LINEAR, borderValue=255)
-    a = cv2.GaussianBlur(a, (3, 3), 0)
+    a = cv2.GaussianBlur(a, (blur_k, blur_k), 0)
     a = np.clip(a.astype("int16") + nrng.normal(0, noise, a.shape), 0, 255).astype("uint8")
     return Image.fromarray(a)
 
@@ -122,7 +122,10 @@ def save_image_pdf(img: Image.Image, path: Path):
 
 # ---------- 產生 ----------
 def make_samples(out_dir=HERE / "samples", font_path=DEFAULT_FONT):
-    """demo 用：同一張訂單的電子版與掃描版，故意放兩個錯誤（批號不存在、單價不符）。"""
+    """demo 用，涵蓋三種分級：
+    - order_acme_*：同一張訂單的電子版與掃描版，故意放兩個錯誤（批號不存在、單價不符）→ 需人工確認
+    - order_globex_pass_scan：所有檢查都通過的掃描檔 → 通過
+    - order_initech_error_electronic：料號不在對照表 → 明顯錯誤"""
     font = register_font(font_path)
     out = Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
@@ -136,7 +139,23 @@ def make_samples(out_dir=HERE / "samples", font_path=DEFAULT_FONT):
     pdf = draw_order_pdf(rec, font)
     (out / "order_acme_electronic.pdf").write_bytes(pdf)
     save_image_pdf(scan_from_pdf(pdf, 3.5, 10, np.random.default_rng(SEED)), out / "order_acme_scan.pdf")
-    print(f"已產生 2 份範例 -> {out}（掃描版旋轉 +3.5°、雜訊 σ=10）")
+
+    ok = {
+        "po_no": "PO-2026-0518", "customer": "Globex Microdevices", "customer_part_no": "OSAT-CHIP-9903",
+        "wafer_lot_id": "LOT-2026-C41", "wafer_size": "12-inch", "package_type": "QFN", "die_count": 8400,
+        "unit_price": 2180.00, "price_unit": "per wafer", "delivery_date": "2027-01-15",
+    }
+    save_image_pdf(scan_from_pdf(draw_order_pdf(ok, font), -2.0, 10, np.random.default_rng(SEED + 1)),
+                   out / "order_globex_pass_scan.pdf")
+
+    bad = {
+        "po_no": "PO-2026-0603", "customer": "Initech Silicon",
+        "customer_part_no": "OSAT-CHIP-9977",  # 錯誤：對照表沒有這個料號
+        "wafer_lot_id": "LOT-2026-D52", "wafer_size": "8-inch", "package_type": "CSP", "die_count": 36000,
+        "unit_price": 118.75, "price_unit": "per 1k units", "delivery_date": "2026-12-28",
+    }
+    (out / "order_initech_error_electronic.pdf").write_bytes(draw_order_pdf(bad, font))
+    print(f"已產生 4 份範例 -> {out}（掃描版分別旋轉 +3.5° 與 -2.0°、雜訊 σ=10）")
 
 
 # 評估集：4 份電子 + 16 份掃描；掃描檔中 12 份傾斜 ≥ 1°（佔全部 60%）
@@ -148,6 +167,8 @@ EVAL_PLAN = (
     + [("scan", (6.0, 10.0))] * 4
 )
 EVAL_ERRORS = [""] * 10 + ["lot_missing"] * 3 + ["price_mismatch"] * 3 + ["part_unknown"] * 2 + ["customer_typo"] * 2
+# 模糊樣本另外附加在後面（o21～o24），不影響前 20 份的亂數序列：(高斯模糊核大小, 刻意放的錯誤)
+BLUR_PLAN = [(5, ""), (9, "price_mismatch"), (13, ""), (17, "lot_missing")]
 
 
 def make_eval_set(out_dir=HERE / "docs_osat", truth=HERE / "ground_truth_osat.csv", font_path=DEFAULT_FONT):
@@ -175,7 +196,15 @@ def make_eval_set(out_dir=HERE / "docs_osat", truth=HERE / "ground_truth_osat.cs
             noise = round(rng.uniform(6, 14), 1)
             name = f"o{i:02d}_scan.pdf"
             save_image_pdf(scan_from_pdf(pdf, angle, noise, nrng), out / name)
-        rows.append({"file": name, **rec, "variant": variant, "angle": angle,
+        rows.append({"file": name, **rec, "variant": variant, "angle": angle, "blur_k": 3 if variant == "scan" else 0,
+                     "injected_error": err, "expected_grade": validate_order(rec, masters)["grade"]})
+
+    for j, (k, err) in enumerate(BLUR_PLAN, len(rows) + 1):
+        rec = make_order(rng, masters, err)
+        angle = round(rng.uniform(-1.0, 1.0), 2)  # 與 V1 的 blur 類相同：輕微傾斜 + 明顯模糊
+        name = f"o{j:02d}_blur.pdf"
+        save_image_pdf(scan_from_pdf(draw_order_pdf(rec, font), angle, 8, nrng, blur_k=k), out / name)
+        rows.append({"file": name, **rec, "variant": "blur", "angle": angle, "blur_k": k,
                      "injected_error": err, "expected_grade": validate_order(rec, masters)["grade"]})
 
     with open(truth, "w", newline="", encoding="utf-8-sig") as fh:

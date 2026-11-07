@@ -12,7 +12,7 @@ from osat_validators import PASS, load_masters, validate_order
 from pdf_router import read_pdf
 
 BINS = [("電子 PDF", None), ("|θ| < 1°", (0, 1)), ("1° ≤ |θ| < 3°", (1, 3)),
-        ("3° ≤ |θ| < 6°", (3, 6)), ("6° ≤ |θ| ≤ 10°", (6, 10.01))]
+        ("3° ≤ |θ| < 6°", (3, 6)), ("6° ≤ |θ| ≤ 10°", (6, 10.01)), ("模糊 blur", None)]
 
 
 def _same(k, pred, truth):
@@ -31,8 +31,10 @@ def _same(k, pred, truth):
 def _bin(row):
     if row["variant"] == "electronic":
         return BINS[0][0]
+    if row["variant"] == "blur":  # 模糊樣本單獨一組，不混入傾斜角區間
+        return BINS[-1][0]
     a = abs(float(row["angle"]))
-    return next(name for name, r in BINS[1:] if r[0] <= a < r[1])
+    return next(name for name, r in BINS[1:-1] if r[0] <= a < r[1])
 
 
 def run(docs: str, truth: str, out: str):
@@ -42,7 +44,7 @@ def run(docs: str, truth: str, out: str):
     for row in rows:
         r = read_pdf(str(Path(docs) / row["file"]))
         rec = {"file": row["file"], "variant": row["variant"], "route": r["route"], "bin": _bin(row),
-               "angle_true": float(row["angle"]),
+               "blur_k": row.get("blur_k", ""), "angle_true": float(row["angle"]),
                "angle_measured": r["skew_angles"][0] if r["skew_angles"] else "",
                "expected_grade": row["expected_grade"], "injected_error": row["injected_error"]}
         rec["angle_err"] = abs(rec["angle_measured"] - rec["angle_true"]) if r["skew_angles"] else ""
@@ -67,9 +69,11 @@ def run(docs: str, truth: str, out: str):
     n = len(res)
     frac = lambda k, m: f"{k}/{m} ({k / m:.0%})" if m else "n/a"
     print(f"\n=== V2 封測客戶訂單  共 {n} 份  tessdata={os.environ.get('TESSDATA_PREFIX', '(預設)')} ===")
-    for v in ("electronic", "scan"):
+    for v in ("electronic", "scan", "blur"):
+        want = "electronic" if v == "electronic" else "scan"
         sub = [x for x in res if x["variant"] == v]
-        print(f"分流正確 {v:10s}: {frac(sum(x['route'] == v for x in sub), len(sub))}")
+        if sub:
+            print(f"分流正確 {v:10s}: {frac(sum(x['route'] == want for x in sub), len(sub))}")
     errs = [x["angle_err"] for x in res if x["angle_err"] != ""]
     if errs:
         print(f"傾斜角量測誤差（掃描檔 {len(errs)} 份）: 平均 {sum(errs) / len(errs):.2f}°，最大 {max(errs):.2f}°")
@@ -93,4 +97,13 @@ def run(docs: str, truth: str, out: str):
         es = f"{sum(e) / len(e):.2f}°" if e else "-"
         print(f"{name:16s}{len(sub):>4d}{es:>14s}{frac(sum(x['norm_doc_correct'] for x in sub), len(sub)):>14s}"
               f"{frac(sum(x['norm_grade_ok'] for x in sub), len(sub)):>14s}")
+
+    blur = [x for x in res if x["variant"] == "blur"]
+    if blur:
+        print("\n--- 模糊樣本逐份（正規化後）---")
+        for x in blur:
+            n_ok = sum(x[f"norm_ok_{k}"] for k in ORDER_FIELDS)
+            wrong = [k for k in ORDER_FIELDS if not x[f"norm_ok_{k}"]]
+            print(f"{x['file']}  模糊核 {x['blur_k']:>2}  欄位 {n_ok}/10  分級 {x['norm_grade']}（應為 {x['expected_grade']}）"
+                  + (f"  讀錯：{', '.join(wrong)}" if wrong else ""))
     print(f"明細已寫入 {out}")
